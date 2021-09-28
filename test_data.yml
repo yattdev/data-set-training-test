@@ -1,0 +1,3497 @@
+version: "2.0"
+nlu:
+- intent: Literature_Courses
+  examples: |
+    - English Literature
+    - French Literature
+- intent: Management_Courses
+  examples: |
+    - Operations
+    - Finance
+- intent: Computer_Science_Courses
+  examples: |
+    - Deep Learning
+    - Networking
+    - Operating System
+- intent: why_this_answer
+  examples: |
+    - Pourquoi est ce que tu me donne cette reponses
+    - pourquoi cette reponse
+    - je veux savoir pourquoi cette reponses
+    - J'aimerais savoir pourquoi cette reponse
+    - pourquoi ces reponses
+- intent: thankyou
+  examples: |
+    - Merci ! c'etais merveilleux
+    - Thank c'est sympa
+    - tkx you c'est extra
+    - Merci ! c'etais admirable
+    - tkx you c'est sympa
+    - merci ! c'etais fantastisque
+    - thank you !
+    - thanx you c'est impeccable
+    - Thank c'est extra
+    - Thanx you c'est puissant
+    - Mes remerciements c'est puissant
+- intent: forgive
+  examples: |
+    - tu m'excuse pour offend
+    - Indulgence
+    - Excuse moi pour ca
+    - pardon
+    - excuse pour offend
+    - veillez me pardonnez s'il te plait
+    - Excuse
+    - pardonne moi
+    - Tu dois me pardonner
+    - Excuse moi
+    - Excuse pour offend
+    - accept mon pardon
+    - Excuse pour ca
+    - Pardonne moi
+- intent: call_nex
+  examples: |
+    - Tu t'appelle Jady
+    - Dis moi jady
+    - tu es la jady ?
+    - Dis Jady ?
+    - dis Jady ?
+    - Ton nom Jady ?
+    - t'es la jady ?
+    - donc tu est Jady ?
+    - tu es la Jady
+    - Ton nom c'est Jady
+    - dis moi Nex
+    - est ce que tu la Jady ?
+    - Ton nom c'est Jady ?
+    - ton nom jady
+    - Dis moi jady ?
+    - Tu es la jady
+- intent: goodbye
+  examples: |
+    - On se vera plutard
+    - Je suis occuper Bye
+    - A plutard
+    - On se vera plutard dans la soirée
+    - je te fera signe a plutard
+    - Au revoir dans la journée
+    - see you dans la soirée
+    - Je suis occuper a plutard
+    - on se vera plutard dans la journée
+    - je suis occuper Tchao
+    - Baye dans la soirée
+    - Je suis occuper Bay bay
+    - je suis occuper Bye
+    - on se vera plutard
+    - je suis occuper on se vera
+    - Je te fera signe Bye
+    - Je suis occuper On se vera
+    - je suis occuper See you
+    - je suis occuper A plutard
+    - a demain dans la soirée
+    - Au revoir
+    - Je suis occuper See you
+    - bay bay dans la journée
+    - au revoir !
+    - ciao dans la journée
+    - ciao
+    - je suis occuper on se vera plutard
+    - je suis occuper Au revoir
+    - bay dans la journée
+    - je suis occuper Bay
+    - je suis occuper A+
+    - a demain dans la journée
+    - Je te fera signe see you
+    - je te fera signe A+
+    - Je suis occuper A demain
+    - je te fera signe baye baye
+    - Je suis occuper see you
+    - on se vera dans la soirée
+    - je suis occuper A demain
+    - Je te fera signe Baye
+    - Je suis occuper bay bay
+    - Bye dans la journée
+    - Je suis occuper on se vera
+- intent: ask_user_feeling
+  examples: |
+    - je veux que vous sachez comment je me sens
+    - je veux que tu me demande pas si ça va ?
+    - pourquoi Tu veux pas savoir comment si sa va
+    - Je veux que vous me demandez si je vais bien
+    - Demande moi si tout baigne ?
+    - pourquoi Vous voulez pas savoir comment si sa va ?
+    - je veux que Tu me demande si je vais bien ?
+    - tu demande pas si je vais bien ou pas ?
+    - Demandez moi si je suis en bonne santé
+    - je veux que Vous me demandez si je vais bien
+    - je veux que Tu sache comment je me sens
+    - Vous ne demandez pas si ca va ?
+    - Je veux que Vous me demandez pas si ca va
+    - comment je me porte selon toi
+    - comment je me sens selon toi ?
+    - pourquoi Vous voulez pas savoir comment si ca va ?
+    - Je veux que Tu me demande pas si ca va ?
+    - je veux que te faire savoir comment je me sens ?
+    - Pourquoi tu veux pas savoir comment si sa va
+    - pourquoi vous voulez pas savoir comment je me sens
+    - je veux que Vous sachez comment je me sens
+    - tu ne demande pas si je vais bien ?
+    - demandez moi si je suis en forme ?
+    - Vous me demandez si je vais bien ou pas
+    - je veux que tu sache comment je me sens
+    - Je veux que Tu sache comment je me sens ?
+    - je veux que vous me demandez si je vais bien
+    - Je veux que tu me demande pas si ca va ?
+    - Tu ne demande pas si je vais bien ?
+    - je veux que tu me demande si je vais bien ?
+    - Pourquoi tu veux pas savoir comment je me porte ?
+    - je veux que Tu me demande pas si ca va ?
+    - Tu ne demande pas si ca va ?
+    - je veux que vous faire savoir comment je me sens
+    - Je veux que Vous sachez comment je me sens
+    - pourquoi vous voulez pas savoir comment je me porte ?
+    - je veux que Vous saisissez comment je me sens ?
+    - pourquoi Tu veux pas savoir comment je me porte ?
+    - pourquoi Vous voulez pas savoir comment je me porte
+    - Tu ne demande pas si je vais bien
+    - vous ne demandez pas si sa va
+    - pourquoi vous voulez pas savoir comment si sa va ?
+    - pourquoi Vous voulez pas savoir comment si sa va
+    - pourquoi Vous me demandez si je vais bien
+    - Pourquoi vous voulez pas savoir comment je me sens
+    - sais tu comment je me porte
+    - Demandez moi si je suis en forme ?
+    - Pourquoi tu veux pas savoir comment si sa va ?
+    - demande moi si tout baigne ?
+    - Comment je me porte selon toi ?
+    - pourquoi Vous voulez pas savoir comment je me porte ?
+    - Je veux que Te faire savoir comment je me sens ?
+    - Pourquoi Tu veux pas savoir comment si ca va ?
+    - je veux que Vous faire savoir comment je me sens ?
+    - Pourquoi Vous voulez pas savoir comment je me porte ?
+    - je veux que vous me demandez pas si sa va ?
+    - je veux que Te faire savoir comment je me sens
+- intent: mood_unhappy
+  examples: |
+    - sadly
+    - tu n'es pas succulent
+    - je suis très triste
+    - triste
+    - Tu n'es sûrement pas si intelligent que je pensais
+    - sa va sa va pas du tout
+    - Sa va pas fortement bien
+    - tu n'es sûrement pas si intelligent que je pensais
+    - I am very sad
+    - Je ne suis pas en forme
+    - sad
+    - Sa va pas super bien
+    - Sa va pas tout
+    - Je n'aime pas les bots
+    - sa va pas tout
+    - tu n'es pas un bon compagnon parfait
+    - Tu n'es pas remarquable
+    - je suis en colère contre toi
+    - Tu n'es pas un bon compagnon excellent
+    - Sa va pas incroyablement
+    - i am very sad
+    - This is bad
+    - je ne suis pas épaté
+    - Tu n'es pas délicieux
+    - Si triste :(
+    - tu n'es pas excellent
+    - je suis triste à ce sujet
+    - tu n'es pas un bon compagnon superbe
+    - Sa va pas
+    - tu n'es pas délicieux
+    - crappy joke
+    - Ça va pas tout
+    - je suis super triste
+    - Je ne suis pas ahuri
+    - Triste
+    - Tu n'es pas super
+    - je vais partir
+    - Tu n'es pas génial
+    - this is a really frustrating experience
+    - tu n'es pas remarquable
+    - Sa va sa va pas du tout
+    - Very bad
+    - Tu n'es pas épatant
+    - Tu es un mauvais bot
+    - i dont like bots
+    - tu n'es pas un bon compagnon super
+    - C'est tellement impoli
+    - so sad
+    - Tu me rends triste
+    - I'm sad
+    - pas bien
+    - tu n'es pas génialissime
+    - pas mal ton histoire mec
+    - Tu n'es pas admirable
+    - Now i'm sad
+    - Ça va pas fortement bien
+    - tu me rends pas heureux !
+    - Sava pas du tout
+    - tu n'es pas sans pareil
+    - you're rather dull
+    - pas mal
+    - je ne suis pas en forme
+    - i am feel sad
+    - Même si je comprends que vous êtes encore en développement, je me sens un peu déçu.
+    - I am feel sad
+    - Je suis triste
+    - sa va pas tout bien
+    - Pas bien
+    - Tu n'es pas un bon compagnon génial
+    - je ne suis pas content
+    - not bad
+    - Ça va pas super
+    - That tool here isnt good
+    - sava pas
+    - Je ne suis pas heureux
+    - Je me sens pas tres bien
+- intent: mood_happy
+  examples: |
+    - Tu es tout simplement incomparable
+    - cool!
+    - Tu es tout simplement épatant
+    - formidable
+    - puissant
+    - je suis content
+    - je suis tout éberlué
+    - I am very happy with your response
+    - superbe
+    - je suis super satisfait
+    - you are funny
+    - tu es épatant
+    - Tout simplement magistrals
+    - je suis super joyeux
+    - Je suis tout étonné
+    - Je suis très satisfait
+    - Tu es admirable
+    - je vais très bien
+    - je suis tout joyeux
+    - Magistral
+    - you are a badass bot!
+    - Ce serait génial
+    - that was a great interaction
+    - hèhè
+    - Je suis très joyeux
+    - incomparables
+    - great!
+    - Tu es tout simplement parfait
+    - tu es tout simplement super
+    - tout simplement succulent
+    - C'est extra
+    - you good
+    - je suis fortement joyeux
+    - Tu es vraiment super
+    - lol thats funny
+    - c'est épatants
+    - Je suis très stupéfait
+    - Ha ha
+    - cool story bro
+    - Tout simplement épatant
+    - délicieux
+    - ja cool
+    - je suis incroyablement épaté
+    - tu es tout simplement succulent
+    - Tu es remarquable
+    - Je suis fortement étonné
+    - tu es un compagnon merveilleux
+    - tu es formidable
+    - tu es tout simplement admirable
+    - i mean to say that I liked the explanation
+    - c'est remarquable
+    - je suis super content
+    - je suis incroyablement éberlué
+    - c'est admirable
+    - Je suis super étonné
+    - je vais fortement bien
+    - Tu es extra
+    - ouais c'est cool
+    - Je suis très ébahi
+    - Hm, j'aimerais ça
+    - Tout simplement sans pareils
+    - Tu es un compagnon super
+    - je suis joyeux
+    - Formidable
+    - je suis tout ahuri
+    - Coolio
+    - Hahah
+    - Tu es tout simplement sans pareil
+    - c'est parfait
+    - Tu es tout simplement impeccable
+    - Super laisse faire ça
+    - Ya thats cool
+    - C'est génial
+    - Je suis tout ébahi
+    - C'est incomparables
+    - c'est épatant
+    - Je vais fortement bien
+    - sans pareils
+    - Tout simplement admirable
+    - Tout simplement excellent
+    - tout simplement magistrals
+    - Love you
+    - je suis très ébahi
+    - Je suis incroyablement étonné
+    - c'est magistrals
+    - you are doin great
+    - Tu es un compagnon extra
+    - je suis très joyeux
+    - Tu es tout simplement super
+    - happy
+    - C'est fantastisque
+    - Je suis très ahuri
+    - got it
+    - je suis incroyablement ébahi
+    - tout simplement excellents
+    - tout simplement superbe
+    - Alright, cool
+    - Haha
+    - hahah
+    - c'est impeccable
+    - WOW
+    - Tout simplement cool
+    - Je suis incroyablement éberlué
+    - je suis heureux
+    - C'est formidables
+    - je suis ahuri
+    - like u
+    - tu es un compagnon admirable
+    - tu es un compagnon excellent
+    - Singulier
+    - je suis tout satisfait
+    - Tu es superbe
+    - tout simplement extra
+    - je suis incroyablement heureux
+    - tout simplement singuliers
+    - ce serait génial
+    - tu es succulent
+    - Great information
+    - tu es tout simplement extra
+    - hAHAHA
+    - Je suis tout ahuri
+    - wow
+    - c'est incomparables
+    - Tu es un compagnon épatant
+    - Great
+    - oui c'est super
+    - Tu es tout simplement génialissime
+    - je d'adore
+    - je suis fortement satisfait
+    - Tu es fantastisque
+    - tout simplement sans pareil
+    - Je suis super ébahi
+    - Tu es excellent
+    - Je suis incroyablement ébahi
+- intent: greet
+  examples: |
+    - Konichiwa
+    - re-bonjour there
+    - Salut les gens !
+    - Salut................................................ .........
+    - Hieeeeeeeeeeeee
+    - salut................................................ ......... here ?
+    - greet mon gentil garçon !
+    - Bien le bonsoir sweatheart !
+    - Salut bot
+    - Bien le bonjour toi
+    - hello robot
+    - I said, helllllloooooo!!!!
+    - Hé hé toi
+    - salut pouvez-vous parler
+    - salut, je suis Sandra Hernandez
+    - salut ami toi !
+    - Hola
+    - hé parlons-en !
+    - Greet mec
+    - hey Mister
+    - Ey sweatheart
+    - hé parlons-en mon gentil garçon !
+    - hi?
+    - Salut tout le monde
+    - bonjour here
+    - Salam
+    - Greet mon gentil garçon !
+    - mes salutions there ?
+    - bonjour toi
+    - Bien le bonsoir toi !
+    - Hi can you speak ?
+    - Qu'est-ce qu'il y a
+    - Salut................................................ ......... ?
+    - mes salutions mec !
+    - Heho sweatheart
+    - Salamalec Mister ?
+    - Heho ?
+    - Howdy
+    - Good mourning
+    - salut !
+    - Salution boss
+    - bien le bonsoir tout le monde ?
+    - Hi friends
+    - re-bonjour !
+    - J'ai dit, helllllloooooo !!!! mec !
+    - hé parlons-en robot
+    - Bonne soirée everybody ?
+    - Hey here
+    - salut here
+    - Hello Mister ?
+    - Salut c'est moi
+    - Hé hé mec !
+    - quoi de neuf bot ?
+    - bonjour c'est encore moi mon gentil garçon
+    - salut pouvez-vous parler men
+    - salut les gens bot ?
+    - jojojo
+    - Re-bonjour robot !
+    - salut pouvez-vous parler ?
+    - ey !
+    - Hi im amanda anderson
+    - Salamalec
+    - Salut l'ami !
+    - bonjour c'est encore moi robot
+    - Salut salut ?
+    - J'ai dit, helllllloooooo !!!! bot !
+    - Salut ?
+    - Halloo
+    - Allo
+    - heyho
+    - wasssup!
+    - ey mec ?
+    - Salut there
+    - hi again
+    - greet jady ?
+    - Salamalec tout le monde
+    - hi there it's me
+    - Salut les amis mec
+    - bien le bonjour
+    - jady hello
+    - Salut les gens ?
+    - Hallo !
+    - Bonsoir ?
+    - salution
+    - salam !
+    - Heya toi !
+    - hallo !
+    - hey !
+    - J'ai dit, helllllloooooo !!!! mon gentil garçon !
+    - mes salutions
+    - hé hé everybody ?
+    - yo bot
+    - Bien le bonjour mon gentil garçon !
+    - Salut c'est moi ?
+    - quoi de neuf
+    - Bonjour c'est encore moi
+    - hello sweatheart
+    - Salut salut intelligence artificiel ?
+    - ey bot ?
+    - Salut c'est moi men ?
+    - Hey let's talk
+    - Hi friend
+    - Halo
+    - hé hé
+    - hello?
+    - Hi again
+    - heya
+    - Salut ami mon gentil garçon ?
+    - Hiihihi
+    - Salut mon gentil garçon
+    - hi hi
+    - bonjour c'est encore moi toi ?
+    - Hallo
+    - bien le bonsoir mon gentil garçon !
+    - hi!
+    - j'ai dit, helllllloooooo !!!! boss ?
+    - Hello ?
+    - Yo
+    - re-bonjour boss
+    - Heya mec !
+    - salut................................................ ......... intelligence artificiel ?
+    - yo
+    - bonjour y a t'il quelqu'un
+    - Hé parlons-en !
+    - Salut les amis mon gentil garçon
+    - halo
+    - Salut ami
+    - Hi hi
+    - hey toi !
+    - hé parlons-en ?
+    - salut bot
+    - J'ai dit, helllllloooooo !!!! everybody ?
+    - salut................................................ ......... mec
+    - Salut les gens
+    - Whats up?
+    - Hello sweatheart
+    - Hi folks
+    - bonne soirée robot
+    - Heeey
+    - Ola sara
+    - bien le bonsoir
+    - Salut les gens Mister !
+    - Quoi de neuf boss
+    - yo toi
+    - salut pouvez-vous parler bot ?
+    - Yo intelligence artificiel
+    - Hi!
+- intent: bot_name
+  examples: |
+    - Puis-je savoir ton nom svp ?
+    - puis-je savoir ton nom svp ?
+    - C'est quoi ton nom de famille déjà stp ?
+    - tu peut me dire ton prenom svp
+    - Je peut savoir ton nom svp
+    - Je peut connaître ton prenom déjà
+    - Je peut connaître ton nom preferer svp
+    - comment tu t'appelle
+    - je peut connaître ton nom preferer ?
+    - Quel prenom on ta donnée
+    - tu me dis ton prenom svp ?
+    - quel est ton nom déjà stp ?
+    - quel est ton nom de famille stp
+    - Au fait, quel est ton nom preferer stp
+    - C'est quoi ton nom preferer déjà ?
+    - Au fait, quel est ton nom déjà svp ?
+    - je veux connaître ton nom de famille ?
+    - Au fait, quel est ton surnom stp
+    - Tu me dis ton surnom déjà ?
+    - c'est quoi ton prenom déjà
+    - Tu peut me dire ton nom déjà ?
+    - puis-je savoir ton surnom déjà ?
+    - Je veux savoir ton nom svp ?
+    - Au fait, quel est ton nom déjà
+    - Au fait, quel est ton surnom déjà stp ?
+    - quel est ton nom déjà stp
+    - Tu me dis ton prenom svp
+    - au fait, quel est ton prenom déjà svp
+    - je peut connaître ton nom preferer déjà ?
+    - Puis-je savoir ton surnom déjà stp
+    - Tu peut me dire ton nom
+    - Dis moi ton prenom
+    - c'est quoi ton prenom svp
+    - c'est quoi ton surnom déjà svp ?
+    - c'est quoi ton prenom stp ?
+    - Je peut savoir ton nom
+    - Tu me dis ton nom svp ?
+    - c'est quoi ton nom preferer stp
+    - je veux connaître ton surnom ?
+    - je veux savoir ton prenom svp ?
+    - au fait, quel est ton prenom déjà svp ?
+    - au fait, quel est ton prenom déjà
+    - c'est quoi ton nom de famille svp ?
+    - je veux connaître ton prenom svp
+    - Quel est ton nom svp
+    - Tu me dis ton nom déjà stp ?
+    - Je veux savoir ton nom ?
+    - Puis-je savoir ton prenom ?
+    - tu me dis ton nom de famille stp
+    - tu peut me dire ton nom déjà
+    - Tu peut me dire ton nom déjà svp
+    - C'est quoi ton nom de famille ?
+    - Je veux connaître ton prenom déjà
+    - quel est ton nom de famille svp
+    - puis-je savoir ton nom stp ?
+    - Quel est ton prenom déjà stp ?
+    - je peut savoir ton nom stp
+    - je veux connaître ton nom de famille svp
+    - tu peut me dire ton nom preferer déjà
+    - quel est ton prenom svp
+    - Tu me dis ton surnom svp ?
+    - je peut connaître ton nom déjà
+    - je peut connaître ton prenom
+    - tu me dis ton prenom déjà svp
+    - je peut savoir ton prenom
+    - quel est ton nom de famille déjà stp ?
+    - je veux connaître ton surnom stp
+    - tu me dis ton nom de famille svp
+    - Je veux connaître ton prenom déjà stp
+    - Au fait, quel est ton nom de famille svp ?
+    - Tu me dis ton nom preferer stp
+    - Tu peut me dire ton nom de famille déjà ?
+    - Quel est ton nom de famille déjà svp
+    - Au fait, quel est ton prenom
+    - Je veux savoir ton prenom déjà stp ?
+    - Je veux savoir ton prenom ?
+    - Je peut connaître ton nom preferer déjà ?
+    - Quel est ton nom preferer svp ?
+    - je veux savoir ton surnom svp ?
+    - je peut connaître ton surnom stp
+    - je peut savoir ton prenom svp ?
+    - Je peut savoir ton surnom ?
+    - Puis-je savoir ton nom svp
+    - je peut savoir ton nom de famille stp ?
+    - c'est quoi ton nom de famille ?
+    - au fait, quel est ton surnom déjà stp ?
+    - Au fait, quel est ton prenom déjà stp
+    - Quel nom preferer on ta donnée
+    - c'est quoi ton nom de famille déjà ?
+    - puis-je savoir ton prenom déjà stp
+    - je veux savoir ton prenom svp
+    - Tu me dis ton surnom
+    - Je peut connaître ton prenom
+    - comment il t'appelle
+    - Quel est ton nom de famille déjà svp ?
+    - au fait, quel est ton prenom déjà stp ?
+    - je veux savoir ton prenom déjà
+    - je peut connaître ton prenom ?
+    - Je veux connaître ton nom preferer déjà stp
+    - quel est ton nom preferer déjà stp
+    - Je peut connaître ton surnom déjà
+    - puis-je savoir ton nom de famille déjà stp
+    - quel prenom on ta donnée
+    - je peut savoir ton nom de famille
+    - Je peut connaître ton prenom ?
+    - comment tu t'appelle ?
+    - tu me dis ton nom de famille déjà svp ?
+    - Je veux savoir ton nom déjà svp
+    - je veux savoir ton nom preferer déjà
+    - quel est ton prenom déjà
+    - Je veux savoir ton nom preferer déjà svp
+    - au fait, quel est ton prenom svp ?
+    - je peut savoir ton surnom déjà ?
+    - Tu peut me dire ton nom svp
+    - Comment il ta nommé ?
+    - je peut connaître ton surnom déjà ?
+    - Quel est ton nom de famille svp ?
+    - Puis-je savoir ton nom preferer svp ?
+    - C'est quoi ton nom déjà
+    - quel est ton prenom déjà svp
+    - Tu peut me dire ton nom de famille svp
+    - Tu me dis ton nom de famille
+    - je veux savoir ton nom de famille déjà svp ?
+    - c'est quoi ton nom preferer déjà stp ?
+    - comment on ta nommé
+    - tu me dis ton surnom
+    - quel est ton nom stp ?
+    - je veux savoir ton nom preferer déjà stp
+    - Quel est ton surnom déjà stp ?
+    - je veux savoir ton nom de famille déjà stp ?
+    - tu peut me dire ton nom déjà stp ?
+    - Au fait, quel est ton nom preferer déjà stp
+    - Tu me dis ton nom déjà ?
+    - puis-je savoir ton nom ?
+    - Je veux connaître ton prenom svp
+    - Comment tu t'appel
+    - Tu peut me dire ton surnom déjà svp ?
+    - Je peut connaître ton nom de famille déjà stp
+    - je veux connaître ton nom de famille déjà svp
+    - tu me dis ton prenom déjà svp ?
+    - tu me dis ton surnom stp
+    - Puis-je savoir ton nom déjà stp
+    - puis-je savoir ton nom de famille déjà svp
+    - puis-je savoir ton nom de famille stp ?
+    - puis-je savoir ton surnom déjà
+    - Tu peut me dire ton surnom déjà ?
+    - je peut savoir ton surnom déjà stp ?
+    - au fait, quel est ton surnom stp
+    - Je peut connaître ton nom svp
+    - C'est quoi ton surnom déjà svp
+    - puis-je savoir ton prenom
+    - Je peut savoir ton nom de famille déjà svp ?
+    - Je veux connaître ton nom preferer ?
+    - Je veux savoir ton surnom déjà
+    - Je veux savoir ton nom preferer déjà
+    - puis-je savoir ton nom stp
+    - Je peut savoir ton nom de famille stp
+    - Je peut connaître ton nom de famille déjà svp ?
+    - puis-je savoir ton nom de famille déjà
+    - Tu me dis ton nom de famille stp
+- intent: need_help
+  examples: |
+    - Par quelle méthode je peux mieux te manipuler tes capacites ?
+    - s'il vous plaît par quelle méthode je peux mieux te manier tes capacites
+    - Je suis intérêssé de comprendre Comment est ce qu'on te manie
+    - trouver Quel est ton mode d'emploi ?
+    - S'il vous plaît par quelle moyen est ce qu'on t'exploite
+    - S'il te plaît puis-je savoir par quelle moyen pourrai-je tirer parti de toi
+    - S'il te plaît J'aime Connaitre par quelle technique pourrai-je profiter de toi
+    - s'il vous plaît nous voulons comprendre par quelle technique je suis cencé te manipuler tes capacites
+    - s'il vous plaît comment je suis cencé t'exploiter tes capacites
+    - S'il vous plaît J'aspire à Savoir quelles sont tes fonctions
+    - S'il vous plaît par quelle technique je suis cencé t'exploiter tes capacites
+    - Trouver Quel est ton mode d'emploi ?
+    - s'il vous plaît quel est ton mode d'emploi ?
+    - s'il vous plaît par quelle moyen je suis cencé te manipuler tes capacites
+    - S'il vous plaît Puis-je comprendre Par quelle manière est ce qu'on t'exploite
+    - Saisir comment je pourrais gagner de toi
+    - s'il vous plaît Par quelle façon je peux mieux t'exploiter tes capacites ?
+    - J'aspire à Trouver quels sont tes fonctions
+    - s'il te plaît j'aime savoir Par quelle procédé est ce qu'on te manie
+    - Connaitre Par quelle méthode je suis cencé te manier tes capacites
+    - j'ai besion de saisir Par quelle travail est ce qu'on t'exploite
+    - Savoir par quelle technique pourrai-je avoir de toi
+    - comprendre quel est ton mode d'emploi ?
+    - Savoir Comment je peux mieux t'exploiter tes capacites
+    - s'il vous plaît je revendique de Trouver Par quelle façon je suis sensé te manipuler tes capacites ?
+    - s'il vous plaît quel est ton mode d'emploi
+    - S'il vous plaît Quels sont tes fonctions
+    - S'il te plaît Puis-je saisir Quel est ton mode d'emploi ?
+    - s'il vous plaît Quel est ton mode d'emploi
+    - s'il te plaît J'ai besion de trouver par quelle technique est ce qu'on t'exploite
+    - S'il vous plaît J'exige de saisir quelles sont tes fonctions
+    - S'il te plaît J'aimerais Connaitre Quels sont tes fonctions ?
+    - par quelle moyen est ce qu'on t'utilise ?
+    - S'il te plaît J'aspire à Saisir quelles sont tes fonctions ?
+    - s'il te plaît J'aimerais Connaitre Quel est ton mode d'emploi
+    - S'il vous plaît j'ai besoin d'aide pour t'utiliser ?
+    - J'exige de saisir Comment est ce qu'on te manipule ?
+    - Savoir Comment je peux gagner de toi
+    - par quelle méthode est ce qu'on te manie ?
+    - est ce que je peux Connaitre Comment pourrai-je jouir de toi ?
+    - Comprendre comment je peux mieux te manier tes capacites
+    - J'ai besoin d'aide pour t'exploiter ?
+    - connaitre Par quelle moyen est ce qu'on te manie ?
+    - comment est ce qu'on t'utilise
+    - s'il vous plaît Quels sont tes fonctions
+    - S'il vous plaît Comment pourrai-je obtenir de toi
+    - Comment je suis sensé te manier tes capacites
+    - s'il vous plaît par quelle moyen je suis cencé te manier tes capacites
+    - s'il te plaît J'aspire à Trouver Quels sont tes fonctions
+    - Comprendre Par quelle méthode je peux mieux t'exploiter tes capacites ?
+    - je ordonne de Trouver Par quelle manière je pourrais retirer de toi
+    - par quelle méthode pourrai-je tirer parti de toi
+    - s'il vous plaît par quelle façon est ce qu'on t'utilise ?
+    - s'il vous plaît par quelle manière est ce qu'on t'utilise
+    - S'il vous plaît par quelle méthode je peux mieux te manier tes capacites ?
+    - trouver par quelle procédé je peux exploiter de toi
+    - s'il vous plaît par quelle manière est ce qu'on te manie
+    - S'il vous plaît je peux trouver par quelle moyen je peux mieux te manipuler tes capacites
+    - S'il vous plaît par quelle méthode est ce qu'on t'exploite
+    - S'il te plaît J'ai besion de Saisir Comment je pourrais gagner de toi ?
+    - connaitre par quelle technique je pourrais gagner de toi
+    - par quelle technique je suis sensé t'utiliser tes capacites ?
+    - comment est ce qu'on t'utilise ?
+    - J'ai envie de saisir Par quelle procédé est ce qu'on te manipule ?
+    - Comment pourrai-je gagner de toi
+    - s'il vous plaît comment pourrai-je gagner de toi
+    - S'il te plaît j'aimerais Connaitre comment pourrai-je obtenir de toi ?
+    - s'il vous plaît J'aimerais Savoir quel est ton mode d'emploi
+    - Par quelle procédé est ce qu'on t'exploite
+    - saisir Comment je peux mieux te manier tes capacites ?
+    - Puis-je connaitre par quelle technique est ce qu'on te manipule ?
+    - j'aime comprendre par quelle manière je peux gagner de toi ?
+    - j'ai besoin d'aide pour t'utiliser ?
+    - S'il vous plaît Comment je peux mieux te manier tes capacites ?
+    - comprendre Quels sont tes fonctions ?
+    - Saisir Quelles sont tes fonctions ?
+    - Savoir Par quelle manière est ce qu'on te manipule ?
+    - Comment pourrai-je gagner de toi ?
+    - Saisir quels sont tes fonctions ?
+    - J'aspire à Comprendre par quelle façon je peux mieux te manipuler tes capacites
+    - Comment est ce qu'on t'exploite ?
+    - Par quelle moyen pourrai-je gagner de toi
+    - J'ai besoin d'aide pour t'exploiter
+    - Quelles sont tes fonctions ?
+    - Quels sont tes fonctions
+    - comprendre comment je peux obtenir de toi ?
+    - comment je suis sensé t'utiliser tes capacites ?
+    - Saisir Comment je peux mieux te manipuler tes capacites
+    - s'il vous plaît j'ai envie de Savoir quel est ton mode d'emploi ?
+    - S'il te plaît Peut-on connaitre comment je peux mieux t'utiliser tes capacites
+    - S'il vous plaît Quelles sont tes fonctions ?
+    - par quelle travail pourrai-je obtenir de toi
+    - s'il vous plaît j'ai besoin d'aide pour t'utiliser ?
+    - Par quelle procédé est ce qu'on t'utilise ?
+    - S'il te plaît J'aspire à comprendre quels sont tes fonctions ?
+    - J'aime Saisir par quelle technique je peux mieux t'exploiter tes capacites ?
+    - s'il vous plaît je peux trouver comment pourrai-je exploiter de toi
+    - J'aime saisir par quelle moyen je peux mieux te manier tes capacites ?
+    - s'il te plaît nous voulons Savoir par quelle manière est ce qu'on t'exploite ?
+    - Par quelle procédé je peux mieux t'exploiter tes capacites
+    - puis-je savoir Quels sont tes fonctions ?
+    - connaitre comment je peux tirer parti de toi ?
+    - Trouver Par quelle travail est ce qu'on te manie ?
+    - S'il te plaît pourrais-je savoir par quelle travail je peux mieux te manier tes capacites ?
+    - S'il vous plaît comment je pourrais gagner de toi ?
+    - s'il te plaît Est ce que je peux savoir Comment est ce qu'on te manie
+    - Connaitre Comment pourrai-je gagner de toi ?
+    - Connaitre Comment est ce qu'on t'exploite ?
+    - j'aspire à connaitre comment pourrai-je obtenir de toi ?
+    - S'il vous plaît j'ai besoin d'aide pour t'exploiter ?
+    - Trouver comment je suis cencé te manipuler tes capacites ?
+    - Saisir comment pourrai-je tirer profit de toi ?
+    - s'il vous plaît Comment est ce qu'on te manie
+    - s'il vous plaît Comment est ce qu'on t'utilise ?
+    - par quelle manière est ce qu'on te manipule
+    - S'il vous plaît puis-je Savoir Comment je peux obtenir de toi
+    - s'il vous plaît Puis-je Saisir quel est ton mode d'emploi ?
+    - Trouver par quelle procédé pourrai-je profiter de toi ?
+    - Connaitre par quelle méthode je pourrais tirer profit de toi ?
+    - s'il vous plaît Comment je peux mieux t'exploiter tes capacites
+    - S'il vous plaît Comment pourrai-je gagner de toi ?
+    - s'il te plaît J'implore de Connaitre quelles sont tes fonctions ?
+    - nous voulons saisir par quelle façon je pourrais tirer parti de toi ?
+    - s'il te plaît pourrais-je Saisir Comment je peux obtenir de toi ?
+    - s'il te plaît j'ai envie de Saisir Comment je peux tirer parti de toi ?
+    - Nous voulons connaitre comment je pourrais tirer profit de toi ?
+    - j'exige de saisir comment est ce qu'on t'exploite
+    - S'il vous plaît Je voudrais connaitre Comment pourrai-je gagner de toi ?
+    - savoir quels sont tes fonctions
+    - s'il te plaît Je ordonne de Savoir Par quelle façon est ce qu'on t'utilise
+    - Saisir quelles sont tes fonctions
+    - s'il vous plaît Comment je peux mieux t'exploiter tes capacites ?
+    - j'implore de Comprendre Quel est ton mode d'emploi ?
+    - j'aspire à saisir Par quelle travail je peux mieux t'utiliser tes capacites ?
+    - Trouver comment je peux mieux te manipuler tes capacites ?
+    - S'il te plaît j'ai envie de connaitre Quel est ton mode d'emploi ?
+    - Trouver Par quelle méthode est ce qu'on t'utilise
+    - Comprendre comment je peux mieux t'exploiter tes capacites
+    - Savoir comment pourrai-je profiter de toi ?
+    - trouver Comment est ce qu'on te manie ?
+    - savoir par quelle méthode je suis cencé te manipuler tes capacites ?
+    - Par quelle travail je suis sensé t'utiliser tes capacites ?
+    - S'il vous plaît Par quelle manière pourrai-je avoir de toi
+    - S'il vous plaît j'aime comprendre quels sont tes fonctions
+    - Connaitre comment je suis sensé te manipuler tes capacites ?
+    - connaitre par quelle travail je peux mieux te manipuler tes capacites ?
+    - connaitre comment je suis sensé t'exploiter tes capacites
+    - pourrais-je saisir Comment je suis sensé te manier tes capacites ?
+    - S'il te plaît j'ai besion de connaitre Quel est ton mode d'emploi ?
+    - Comment je peux gagner de toi ?
+    - s'il te plaît j'exige de comprendre Par quelle façon pourrai-je tirer parti de toi ?
+    - j'ai besion de Comprendre par quelle procédé est ce qu'on te manie ?
+    - S'il vous plaît puis-je savoir Quel est ton mode d'emploi
+    - Connaitre Par quelle méthode pourrai-je tirer profit de toi
+    - est ce que je peux savoir Comment pourrai-je obtenir de toi ?
+    - s'il vous plaît Par quelle technique est ce qu'on t'utilise
+    - Est ce que je peux savoir Par quelle façon pourrai-je tirer profit de toi
+    - par quelle manière je peux mieux t'utiliser tes capacites
+    - saisir quels sont tes fonctions
+    - j'ai besoin d'aide pour te manier
+    - par quelle technique je peux mieux t'exploiter tes capacites
+    - s'il te plaît Puis-je Savoir quel est ton mode d'emploi
+    - S'il vous plaît par quelle procédé pourrai-je gagner de toi ?
+    - Par quelle technique je pourrais obtenir de toi
+    - connaitre Comment pourrai-je gagner de toi ?
+    - Par quelle technique je suis sensé t'exploiter tes capacites ?
+    - S'il vous plaît est ce que je peux saisir Par quelle méthode est ce qu'on t'exploite
+    - par quelle méthode pourrai-je tirer profit de toi ?
+    - Par quelle méthode je peux gagner de toi
+    - s'il vous plaît Pourrais-je connaitre Comment je suis sensé te manipuler tes capacites ?
+    - Connaitre par quelle travail je pourrais exploiter de toi
+    - s'il vous plaît comment je suis sensé te manier tes capacites
+    - Connaitre Par quelle méthode je suis sensé te manipuler tes capacites ?
+    - S'il vous plaît Par quelle travail je pourrais jouir de toi
+    - Comprendre Quel est ton mode d'emploi ?
+    - Trouver par quelle manière est ce qu'on te manipule ?
+    - Par quelle moyen je suis cencé t'exploiter tes capacites ?
+    - connaitre comment est ce qu'on te manie
+    - Trouver comment est ce qu'on t'exploite ?
+    - trouver quel est ton mode d'emploi ?
+    - Comment je peux avoir de toi ?
+    - s'il te plaît Nous voulons Saisir par quelle moyen est ce qu'on te manie
+    - Connaitre Quel est ton mode d'emploi
+    - J'aspire à Connaitre par quelle technique je peux mieux te manier tes capacites ?
+    - comment je pourrais obtenir de toi
+    - Comment pourrai-je profiter de toi ?
+    - S'il vous plaît comment je suis cencé t'exploiter tes capacites ?
+    - s'il te plaît Peut-on Comprendre Comment pourrai-je profiter de toi ?
+    - j'ai besion de Comprendre Comment je peux mieux te manipuler tes capacites
+    - comprendre Quelles sont tes fonctions ?
+    - Comment je suis sensé t'exploiter tes capacites ?
+    - j'aime savoir comment je suis sensé t'utiliser tes capacites ?
+    - trouver Quel est ton mode d'emploi
+    - S'il te plaît Je voudrais Comprendre Quel est ton mode d'emploi ?
+    - s'il vous plaît Par quelle travail je suis cencé t'utiliser tes capacites ?
+    - s'il vous plaît quels sont tes fonctions ?
+    - connaitre quel est ton mode d'emploi
+    - Comment je peux mieux t'utiliser tes capacites
+    - S'il vous plaît par quelle manière je peux mieux t'utiliser tes capacites
+    - J'aspire à Savoir Par quelle méthode je pourrais gagner de toi ?
+- intent: offend
+  examples: |
+    - Tu es un couillon
+    - Je dis que tu es panaris
+    - Je dis que Tu es un Fripouille
+    - Tu es un Pouffiasse
+    - Èspece Ducon
+    - Tu es Pouffiasse
+    - Cancrelat
+    - Tu n'est qu'un Hurluberlu
+    - je dis que Tu es un Casse-pieds
+    - pleutre
+    - Tu es un Sac à Merde
+    - Je dis que tu n'est qu'un enculeur De Mouches
+    - Je dis que tu es un Pygocéphale
+    - tu n'est qu'un Iconoclaste
+    - Eunuque
+    - je dis que tu n'est qu'un piqueniquedouille
+    - Tu es un sacrebleu
+    - Faquin
+    - triple Buse
+    - je dis que Tu es un cloche
+    - je dis que tu es un pot de chambre
+    - attardé
+    - Grognasse
+    - je dis que tu n'est qu'un Aigrefin
+    - bougre De Congre
+    - Tu es null
+    - Je dis que tu n'est qu'un Empaffé
+    - je dis que tu n'est qu'un arsouille
+    - Tu n'est qu'un Pissure
+    - Èspece d'Andouille
+    - Je dis que Tu es frigide
+    - tu n'est qu'un Malandrin
+    - Èspece d'Attardé
+    - je dis que tu n'est qu'un Pimbêche
+    - Peigne-cul
+    - èspece d'infâme Raie De Cul
+    - tu es null
+    - tu n'est qu'un avorton
+    - Èspece d'Ordure Purulente
+    - dégueulasse
+    - sodomite
+    - Foldingue
+    - résidus De Partouze
+    - tu es Putréfaction
+    - Je dis que Tu es un hérétique
+    - Èspece de dégueulis
+    - je dis que Tu n'est qu'un Putin
+    - avorton
+    - Je dis que tu es raclure De Bidet
+    - Je dis que tu n'est qu'un Sodomite
+    - èspece de couard
+    - je dis que tu es Vicelard
+    - Je dis que Tu es Quadrizomique
+    - ramassis De Chiure De Moineau
+    - Je dis que Tu n'est qu'un Usurpateur
+    - vicelard
+    - Fumier
+    - andouille
+    - Pine D’ours
+    - nounouille
+    - Tu n'est qu'un dégénéré Chromozomique
+    - èspece de cul Terreux
+    - tu n'est qu'un vilain
+    - taré
+    - Imbibé
+    - Mortecouille
+    - tu es un Morbleu
+    - judas
+    - branlotin
+    - tu es un décérébré
+    - Tête D’ampoule
+    - Tu n'est qu'un nazillon
+    - Tu n'est qu'un brigand
+    - èspece de Manant
+    - Gros Con
+    - èspece de Niais, Niaiseux
+    - pétassoïde Conassiforme
+    - Tu es un Poireau
+    - je dis que tu es mongol
+    - Chieur
+    - Babache
+    - èspece de peigne-cul
+    - je dis que Tu es Balai de Chiottes
+    - tu es crevard
+    - Tu es un Sac à Gnole
+    - trumeaux
+    - Imbécile
+    - faraud
+    - je dis que tu n'est qu'un Ironie De La Création
+    - Tu n'est qu'un Ignare
+    - Je dis que tu es un Histrion
+    - Tu n'est qu'un Jaune
+    - tu es playboy De Superette
+    - tu es Pygocéphale
+    - je dis que tu es Voleur
+    - Obsédé
+    - Tu n'est qu'un Tête De Noeud
+    - je dis que tu n'est qu'un Cervelle D’huitre
+    - Salope
+    - Abruti
+    - Gueule De Fion
+    - Tu n'est qu'un Sac à Foutre
+    - èspece de Mange Merde
+    - tu es larve
+    - Je dis que Tu es un paysan
+    - Tu n'est qu'un Enflure
+    - balai de Chiottes
+    - Pouilleux
+    - tu es Scelerat
+    - tu es minable
+    - Malotru
+    - Je dis que Tu es un sous Merde
+    - suintance
+    - Je dis que Tu es peine A Jouir
+    - frappe
+    - truand
+    - quadrizomique
+    - je dis que tu es Sot
+    - je dis que Tu es un Sybarite
+    - èspece de cassos (cas Social)
+    - glandeur
+    - je dis que tu n'est qu'un ahuri
+    - je dis que Tu n'est qu'un empoté
+    - gougnafier
+    - je dis que tu es un Voleur
+    - tu n'est qu'un imbibé
+    - tu es un Crotte De Moineau
+    - nanar
+    - tu n'est qu'un Imbécile
+    - mont De Brin
+    - mononeuronal
+    - èspece de Clodo
+    - Enculeur De Mouches
+    - je dis que tu es Résidus De Partouze
+    - bougre D’âne
+    - Tu es un margoulin
+    - èspece dugland
+    - rambo De Pacotille
+    - Tu n'est qu'un Baltringue
+    - tu es un Branlotin
+    - Èspece de sybarite
+    - je dis que Tu es mouton De Panurge
+    - tu n'est qu'un bougre D’âne
+    - Je dis que tu es un corniaud
+    - je dis que tu es blaireau
+    - Je dis que Tu n'est qu'un Obsédé
+    - Je dis que Tu es un malpropre
+    - je dis que tu n'est qu'un Ectoplasme
+    - tu es bougre De Congre
+    - Je dis que tu es Merdaillon
+    - Tu es sac à Foutre
+    - Phlegmon
+    - Assisté
+    - èspece de Pouffiasse
+    - je dis que Tu es Vieille Baderne
+    - Èspece d'Anachorète
+    - tu es Grenouille
+    - Je dis que tu n'est qu'un asticot
+    - tu n'est qu'un Syphonné
+    - Tu n'est qu'un Furoncle
+    - èspece de frapadingue
+    - Tu es un Trumeaux
+    - Èspece de Mont De Brin
+    - gueulard
+    - Tu es un planqué
+    - Tu es vieux Con
+    - Je dis que Tu es Face De Cul
+    - kroumir
+    - èspece de sot
+    - schnock
+    - foldingue
+    - tu n'est qu'un Crassard
+    - je dis que tu n'est qu'un vorace
+    - gourgandin/e
+    - je dis que tu es un Nain De Jardin
+    - spermiducte
+    - je dis que Tu es un Pendard
+    - Tu es un Pissure
+    - èspece d'Eunuque
+    - sac à Gnole
+    - Andouille
+    - outrecuidant
+    - Èspece d'anus De Poulpe
+    - Tu es ramassis De Chiure De Moineau
+    - je dis que Tu es globicéphale
+    - Je dis que tu n'est qu'un Ironie De La Création
+    - Branleur
+    - Ecervelé
+    - Tu es gueule De Raie
+    - Tu n'est qu'un ectoplasme
+    - tu es vicelard
+    - tu es un Gueux
+    - tu n'est qu'un Morbleu
+    - Pipistrelle Puante
+    - sac à Brin
+    - Taré
+    - Èspece de Minable
+    - Je dis que Tu es zouave
+    - je dis que Tu es un troubignole
+    - Je dis que Tu es un caprinophile
+    - Tu es un casse-pieds
+- intent: out_of_scope
+  examples: |
+    - Colder
+    - are you ready?
+    - nLW
+    - What are you doing now?
+    - oui je besoine de l'aide
+    - you have children?
+    - is Jady a studio?
+    - est-ce que Jady est vraiment intelligent?
+    - i can barely see this white text on light gray background ...
+    - Is Jady a studio?
+    - please hjave lunchj
+    - What is the capital of delhi
+    - Et faites des bruits de poulet dans le téléphone
+    - buy groceries
+    - quel est ton sexe ?
+    - Je l'ai installé
+    - Whats that
+    - Alexa, commandez 5 tonnes de chlorure de natrium
+    - I want to find new friends
+    - où suis-je?
+    - kannst du auch deutsch?
+    - example of a chatbot
+    - j'ai changé d'avis
+    - Comment puis-je tester cela
+    - 你好
+    - More
+    - Google?
+    - Crois-tu en Dieu?
+    - What is the day ?
+    - Pizza
+    - Je suis un shitmuncher
+    - Refresh
+    - c'est aujourd'hui samedi?
+    - Tu ne veux pas me demander comment je vais?
+    - did i break you
+    - Après l'inscription, je constate que j'ai un solde disponible de 0,0000000000. Que représente cet équilibre?
+    - can we keep chatting?
+    - a tamed mouse will arrive at your doorstep in the next couple of days
+    - Tu es de quel genre
+    - est tu un croyant
+    - tu as un copin
+    - Puis-je mourir
+    - But I just told you that :(
+    - je suis un shitmuncher
+    - i wanna party
+    - please voulette
+    - Tu parles francais?
+    - what are your uses for universities
+    - the Try it out is not working
+    - Again?
+    - Je veux utiliser un tuyau
+    - But you're an english site :(
+    - Jady codigo abierto
+    - es-tu facebook
+    - where do i type in commandy
+    - which email should i send to ?
+    - pouvez-vous faire des sandwichs?
+    - alexa, commandez 5 tonnes de chlorure de natrium
+    - I want to eat
+    - hi i want to go palghar
+    - service personnalisé
+    - you have to
+    - What is a mascot
+    - The beatles
+    - try it out broken
+    - Donne-moi une petite amie
+    - Ljljl
+    - how do you learn
+    - lunch
+    - Winter is already leaving
+    - What is your purpose
+    - can you help me with your docs
+    - How to get Jady studio
+    - I am an opioid addic
+    - it's a pity
+    - i am an opioid addict
+    - Connaissez-vous ras
+    - How good is Jady
+    - ı am learning python
+    - make me a sandwich
+    - J'ai faim, que dois-je faire?
+    - What's your wife doing this weekend
+    - Buy groceries
+    - Flight catch up
+    - I want pizza!!
+    - you already have that
+    - ok one then
+    - how can i test this
+    - Je vous pose une question hors de portée
+    - Will u kill me?
+    - pouvez-vous m'aider avec les docs?
+    - It's a pity
+    - Combien de temps faut-il pour configurer un bot Jady?
+    - are you russian?
+    - german?
+    - What else?
+    - quel est votre système backend?
+    - remember my name
+    - who let the dog out
+    - Mais si Jady est open source, pourquoi avez-vous une équipe de vente
+    - can you please send me an uber
+    - Réserver un billet
+    - Recharge
+    - peux-tu me donner une tasse de café
+    - wait a bit i am still reading
+    - l'essai ne fonctionne pas
+    - Are you sick
+    - Custom service
+    - What did you eat for lunch?
+    - qu'est-ce qui vous rend meilleur qu'un humain?
+    - What you ate today?
+    - Mascot means?
+    - how to go to newyork ?
+    - Can I ask you questions first?
+    - i want to book a hotel
+    - I am not a developer but need this for business
+    - I wan to buy a plane
+    - How long does it take to set up a Jady bot?
+    - Are you dev?
+    - i wan to buy a plane
+    - I can't deal with _your_ request
+    - La newsletter vaut-elle l'abonnement?
+    - tudo bom
+    - machine learning
+    - You girl
+    - I want to order a pizza
+    - je veux t'épouser
+    - ARE YOU SINGLE
+    - Wer bist Du?
+    - Que préfères-tu?
+    - je l'ai installé
+    - Can you learn from our conversation?
+    - where am I right now?
+    - find nearest pizzahut
+    - Comment drager un homme
+    - mais je viens de vous dire que :(
+    - Comment ça se compare à Alexa
+    - Mais vous êtes un site anglais :(
+    - expert of Jady
+    - have you heard of corona?
+    - hey petite maman laisse les chuchoter dans ton oreille
+    - Gsaf
+    - Drhdtjfjfyj
+    - Lunch??
+    - es-tu célibataire
+    - i need to eat cake
+    - Ok one then
+    - yeah, my dog was drinking a couple of litres of water per day and tried drinking the swimming pool
+    - Avez-vous votre photo?
+    - When is the next train is coming?
+    - Essayez-le cassé
+    - I want to book a hotel
+    - why is my TRUST score set to 50 after I completed the registration process?
+    - donne moi de la nourriture
+    - sorry, i cannot rephrase
+    - recharge
+    - youTube peut-il parler?
+    - ljljl
+    - what do you think abou siri?
+    - Why sky is blue?
+    - Call me father
+    - really? you're so touchy?
+    - αστεία λές
+    - is Jady really smart?
+    - no wait go back i want a dripping ice cream but a cone that catches it so you can drink the ice cream later
+    - je suis un toxicomane aux opioïdes
+    - Appelle-moi père
+    - qui sont vos clients
+    - il fait beau
+    - what is your purpose
+    - No, i need cash, money! Do you have it ?
+    - Puis-je avoir un hamburger?
+    - appelle-moi père
+    - pouvez-vous apprendre de notre conversation?
+    - how good is Jady
+    - What do you think of alexa
+    - which city are you talking about?
+    - what did you eat for lunch?
+    - L'essai ne fonctionne pas
+    - isn't the newsletter just spam?
+    - pouvez-vous réserver le dîner
+    - kya hindi me bat kar sakate ho
+    - Book a ticket
+    - I want to grab lunch
+    - What did you eat yesterday?
+    - Do you know me
+    - I wanna marry you
+    - Which email should i send to ?
+    - Service personnalisé
+    - Ne peux voir
+    - Je veux acheter un avion
+    - Achetez-en un s'il vous plaît
+    - 呵呵
+    - what lnu mean?
+    - Who is the president of india ?
+    - how it compares to alexa
+    - i want to use pipe
+    - Hi i want to go palghar
+    - Which city are you talking about?
+    - Qu'est-ce qui vous rend meilleur qu'un humain?
+    - quel est ton sexe
+    - what about wheather
+    - come stai?
+    - Shitmuncher
+    - tu as une copine ?
+    - Avez-vous déjà vu Keith Reilly?
+    - je veux un nouvel ordinateur portable
+    - what are contextual AI assistants and how different are they from chatbots?
+    - i am trying to build one, and did some research before, but I have not do hand-on work yet
+    - Mountain
+    - where am I?
+    - C'est aujourd'hui samedi?
+    - Je veux de la pizza
+    - How are the kids
+    - j'ai faim
+    - what's a newsletter?
+    - comment puis-je les obtenir?
+    - Silly bot
+    - What's do YouTube do
+    - Est ce que tu est intelligent
+    - est ce que tu est intelligent
+    - ¿Qué pasa?
+    - mountain
+    - Asdkjasdhjkasd
+- intent: ask_bot_feeling
+  examples: |
+    - Tout va bien ??
+    - Comment tu va toi ??
+    - comment ca va robot ?
+    - ça va ?
+    - Est ce que ca va bot ?????
+    - Ça va ?
+    - Sa va ce matin ???
+    - comment te sens tu bot ???
+    - Comment tu te sens robot ???
+    - j'espere que Ca va ?
+    - Comment te sens tu bot ?
+    - j'espere que ça va ce matin ???
+    - comment ca va intelligence artificiel ??
+    - est ce que ca va ?????
+    - j'espere que tout baigne aujourd'hui ??
+    - j'espere que Ca va ce matin ???
+    - est ce que Ca va intelligence artificiel ?
+    - J'espere que tout baigne ce matin ?
+    - J'espere que Tout va bien aujourd'hui ??
+    - Comment sa va robot ?????
+    - J'espere que Tout baigne aujourd'hui ?
+    - comment va tu aujourd'hui ??
+    - J'espere que tout baigne aujourd'hui ?????
+    - ça va aujourd'hui ?????
+    - Est ce que Tout baigne toi ???
+    - Est ce que ça va robot ?????
+    - est ce que Sa va bot ???
+    - Comment tu va robot ?????
+    - Comment va tu robot ?????
+    - Est ce que tout va bien toi ?
+    - la forme aujourd'hui ?
+    - Comment tu va intelligence artificiel ??
+    - Ça va ce matin ?
+    - Comment ca va ce matin ?????
+    - Comment tu te sens ce matin ?
+    - Est ce que sa va intelligence artificiel ?????
+    - est ce que Tout va bien robot ???
+    - comment tu te sens ce matin ??
+    - est ce que Sa va robot ?????
+    - est ce que Ça va intelligence artificiel ?????
+    - est ce que Sa va robot ??
+    - Comment tu te sens robot ?????
+    - Comment va tu ??
+    - Est ce que tout baigne ?????
+    - j'espere que Ça va aujourd'hui ??
+    - j'espere que Ça va aujourd'hui ?????
+    - Est ce que Ça va intelligence artificiel ?????
+    - Est ce que Ca va bot ?
+    - Est ce que Sa va ??
+    - Comment tu te sens intelligence artificiel ???
+    - J'espere que Tout va bien ce matin ?????
+    - j'espere que Tout va bien aujourd'hui ?
+    - J'espere que sa va ?????
+    - J'espere que Ca va ???
+    - Est ce que Sa va ?
+    - est ce que Ça va robot ???
+    - est ce que tout va bien robot ?????
+    - est ce que Ca va ?????
+    - Est ce que Tout baigne bot ???
+    - ca va aujourd'hui ?????
+    - Est ce que ça va toi ?????
+    - est ce que sa va intelligence artificiel ??
+    - Est ce que Sa va bot ??
+    - comment tu te sens bot ?
+    - ca va ce matin ???
+    - Est ce que tout va bien bot ?
+    - Comment ça va ?????
+    - comment ça va toi ???
+    - comment tu te porte ?????
+    - J'espere que Ça va aujourd'hui ?
+    - j'espere que sa va ce matin ??
+    - comment te sens tu ce matin ???
+    - tout baigne ce matin ??
+    - j'espere que ca va aujourd'hui ?
+    - est ce que Tout baigne bot ?
+    - Est ce que tout va bien toi ?????
+    - Comment va tu robot ?
+    - Est ce que Sa va ???
+    - Est ce que ca va intelligence artificiel ???
+    - J'espere que Ça va aujourd'hui ???
+    - Comment ça va toi ?????
+    - est ce que Ça va toi ??
+    - est ce que ca va ?
+    - comment va tu bot ?????
+    - comment tu va robot ?
+    - j'espere que Ça va ???
+    - est ce que tout va bien robot ?
+    - comment tu va aujourd'hui ?
+    - Comment ca va bot ?????
+    - est ce que ca va ??
+    - Sa va ?????
+    - Est ce que tout baigne bot ?????
+    - Comment sa va intelligence artificiel ???
+    - Ca va ce matin ?????
+    - j'espere que Ca va ce matin ?
+    - est ce que Tout va bien ?
+    - Est ce que tout baigne intelligence artificiel ?
+    - Est ce que Ça va toi ?
+    - est ce que tout va bien robot ??
+    - Comment sa va aujourd'hui ??
+    - Comment ça va bot ?????
+    - Comment va tu ce matin ?????
+    - Est ce que Ça va toi ???
+    - Oui tout va bien et toi ?
+    - est ce que Sa va toi ???
+    - j'espere que ça va ?????
+    - comment va tu robot ???
+    - La forme ce matin ?
+    - est ce que ca va intelligence artificiel ??
+    - comment ça va robot ??
+    - est ce que ça va intelligence artificiel ??
+    - la forme aujourd'hui ???
+    - ça va ce matin ?
+    - Comment tu va bot ?
+    - est ce que Sa va robot ???
+    - j'espere que sa va ce matin ???
+    - ca va aujourd'hui ?
+    - comment tu te sens aujourd'hui ?
+    - sa va ce matin ?
+    - J'espere que tout baigne ??
+    - comment tu te sens intelligence artificiel ??
+    - Comment va tu robot ??
+    - est ce que Tout va bien bot ?
+    - Comment ça va robot ??
+    - j'espere que Sa va aujourd'hui ?
+    - Comment tu va bot ??
+    - Est ce que tout baigne ??
+    - Est ce que Ça va ???
+    - ça va ?????
+    - Comment ca va bot ?
+    - comment tu va robot ??
+    - est ce que ca va bot ???
+    - Est ce que ca va intelligence artificiel ??
+    - Comment ca va robot ?????
+    - Comment ca va robot ?
+    - j'espere que Ca va ??
+    - j'espere que sa va ce matin ?????
+    - Comment tu vas
+    - Comment tu te sens toi ???
+    - Est ce que ça va ?????
+    - Est ce que Ça va ??
+    - Est ce que Sa va toi ???
+    - la forme ???
+    - comment ca va ?????
+    - Est ce que tout va bien ???
+    - Est ce que sa va robot ?
+    - Est ce que ça va intelligence artificiel ?????
+    - comment va tu ce matin ?
+    - Comment ca va toi ?????
+    - J'espere que ça va aujourd'hui ??
+    - j'espere que sa va ??
+    - La forme aujourd'hui ??
+    - comment va tu ce matin ??
+    - est ce que sa va ???
+    - est ce que sa va ?????
+    - J'espere que Sa va aujourd'hui ???
+    - j'espere que Tout baigne ?????
+    - Sa va ce matin ??
+    - j'espere que ca va ce matin ???
+    - Est ce que sa va ?????
+    - j'espere que sa va ???
+    - J'espere que tout va bien ce matin ?
+    - J'espere que ca va ?????
+    - ça va ???
+    - ça va aujourd'hui ?
+    - Comment tu te sens ??
+    - La forme ?
+    - Comment sa va robot ?
+    - Est ce que Tout baigne robot ?
+    - Comment tu va robot ???
+    - est ce que ça va robot ?????
+    - est ce que sa va robot ?????
+    - comment ca va intelligence artificiel ?
+    - Comment va tu aujourd'hui ?????
+    - Comment ca va ???
+    - Comment sa va toi ?????
+    - Est ce que sa va ???
+    - comment tu te sens aujourd'hui ???
+    - J'espere que Tout va bien ce matin ?
+    - J'espere que sa va ce matin ?
+    - Comment ca va robot ???
+    - J'espere que ça va ce matin ?????
+    - J'espere que tout baigne ???
+    - Est ce que Ca va intelligence artificiel ?
+    - Est ce que Ca va ???
+    - est ce que Ça va intelligence artificiel ?
+    - comment tu va ??
+    - Comment te sens tu bot ??
+    - J'espere que ça va ?
+    - j'espere que ca va ce matin ?????
+    - sa va aujourd'hui ???
+    - Comment tu va aujourd'hui ?
+    - J'espere que Tout va bien ?????
+    - j'espere que Ça va ?
+    - Est ce que Tout va bien robot ??
+    - comment sa va toi ?
+    - Est ce que Tout baigne ???
+    - J'espere que Tout baigne aujourd'hui ???
+    - est ce que Ca va toi ?
+    - Est ce que ca va ??
+    - j'espere que Tout baigne aujourd'hui ???
+    - J'espere que sa va aujourd'hui ??
+    - Comment tu va ?????
+    - est ce que tout va bien intelligence artificiel ??
+    - comment tu te sens ?
+    - Tout va bien aujourd'hui ?
+    - comment ca va toi ??
+    - Est ce que tout baigne ?
+    - Est ce que Tout va bien ???
+    - Ça va aujourd'hui ???
+    - Comment sa va intelligence artificiel ?
+    - Comment tu te sens ?????
+    - Comment te sens tu robot ???
+    - Sa va ce matin ?????
+    - la forme ?????
+    - Est ce que Ça va intelligence artificiel ??
+    - est ce que tout va bien intelligence artificiel ?
+    - Est ce que ca va toi ???
+    - j'espere que sa va aujourd'hui ???
+    - Est ce que Sa va intelligence artificiel ??
+    - est ce que Sa va toi ?
+    - comment tu te sens intelligence artificiel ???
+    - comment sa va bot ??
+    - J'espere que tout baigne aujourd'hui ???
+    - j'espere que Sa va ??
+    - comment ca va intelligence artificiel ???
+    - comment ça va aujourd'hui ?
+    - comment sa va intelligence artificiel ???
+    - Est ce que ça va ???
+    - est ce que ca va robot ???
+    - Comment tu te sens aujourd'hui ?
+    - ca va ce matin ??
+    - est ce que Sa va bot ??
+    - Est ce que ça va intelligence artificiel ???
+    - Est ce que Ca va robot ??
+    - Comment sa va bot ?????
+- intent: deny
+  examples: |
+    - je suis pas d’accord robot !
+    - je refuse intelligence artificiel !
+    - N / a
+    - decline bot
+    - non et non encore
+    - i don't want either of those toi !
+    - No i dont want intelligence artificiel !
+    - i do not need help installing robot
+    - jamais robot !
+    - No, thank you intelligence artificiel !
+    - No i can't intelligence artificiel
+    - i'm afraid not intelligence artificiel !
+    - je n'ai pas besoin d'aide pour installer !
+    - Ça craint bot !
+    - I don't want either of those robot !
+    - Nö bot !
+    - nan intelligence artificiel !
+    - nö bot !
+    - nan. je vais bien robot !
+    - No i dont want to robot !
+    - Non ne voulez pas cela! !
+    - no way robot
+    - i don't care intelligence artificiel
+    - Ça va assez mal robot
+    - No i dont want to accept :p lol bot
+    - Wrong robot
+    - Non, ça va robot !
+    - Nope. i am good bot
+    - Je refuse toi
+    - Nan. je vais bien intelligence artificiel !
+    - je n'ai pas besoin d'aide pour installer toi
+    - Pas d'arrêt bot !
+    - Nier intelligence artificiel !
+    - je ne veux pas intelligence artificiel
+    - No i don't accept toi
+    - Nah, i'm good intelligence artificiel !
+    - je ne suis pas sûr robot
+    - na intelligence artificiel !
+    - It sux bot
+    - No go toi !
+    - C’est du mensonge
+    - Not yet robot
+    - I guess it means - no toi !
+    - nö robot
+    - Non et non encore intelligence artificiel !
+    - not right now intelligence artificiel
+    - C’est une mensonge
+    - nan toi
+    - J'ai bien peur que non toi
+    - not really bot !
+    - Non je ne le ferai pas intelligence artificiel
+    - Nope. i am good robot !
+    - Arrête, je m'en fous !!! bot !
+    - pas tout de suite intelligence artificiel
+    - je ne veux pas dire intelligence artificiel !
+    - no, thankyou bot
+    - Nö robot !
+    - Pas encore bot !
+    - i'm not giving you my email address bot
+    - No you did it wrong intelligence artificiel
+    - Non tu l'as mal fait robot
+    - I guess it means - no bot
+    - decline intelligence artificiel
+    - Non, merci robot !
+    - Nope! robot
+    - no stop bot !
+    - Non :( bot !
+    - no, thanks
+    - Non ne voulez pas cela! robot
+    - C’est non toi
+    - pas d’accord robot
+    - Tu ment bot
+    - Aucun d'entre eux bot
+    - Non, première fois bot !
+    - Je ne veux pas te le donner
+    - no you did it wrong
+    - no i dont want to accept :p lol bot
+    - I'm not giving you my email address toi
+    - je ne veux pas dire le nom de ma société toi !
+    - no i dont want to accept :p lol intelligence artificiel
+    - ça ne fait rien !
+    - non ne voulez pas cela!
+    - i don't think so robot !
+    - It is going pretty badly bot !
+    - No i won't robot
+    - no way intelligence artificiel !
+    - no and no again
+    - I don't wanna tell the name of my company intelligence artificiel
+    - je ne veux pas accepter: p lol robot !
+    - no bots at all
+    - i'm afraid not
+    - nier toi
+    - Nah i'm good bot !
+    - it sucks robot !
+    - definitely not bot !
+    - No !
+    - nope bot !
+    - non, première fois toi
+    - nan! toi !
+    - non ne voulez pas cela! bot
+    - I don't care
+    - Nevermind robot
+    - nan !
+    - Définitivement pas toi !
+    - pas d’accord bot !
+    - i dont want to tell toi !
+    - certainement pas intelligence artificiel
+    - I don't want to robot
+    - not really robot !
+    - i don't want either of those
+    - no thanks intelligence artificiel
+    - Je n'ai rien a dire
+    - Pas d'arrêt toi
+    - Nah i'm good toi !
+    - Pas d’accord bot
+    - nan toi !
+    - c’est pas exacte bot
+    - i'm not giving you my email address intelligence artificiel
+    - C’est non !
+    - no, i hate it toi
+    - Ça va assez mal !
+    - No, my frst time intelligence artificiel
+    - noooooooooo robot
+    - No thanks !
+    - nah robot !
+    - nopes intelligence artificiel
+    - Not really bot
+    - i don not like this
+    - No i haven't decided yet if i want to sign up
+    - nah not for me intelligence artificiel
+    - No bots at all bot !
+    - i guess it means - no !
+    - nevermind robot
+    - None of them intelligence artificiel
+    - none of them bot !
+    - Je ne veux pas dire intelligence artificiel
+    - Nope robot
+    - Thanks but no thanks
+    - C’est du mensonge intelligence artificiel
+    - No way bot !
+    - i don't want to give you my email bot !
+    - I'm not going to give it to you toi
+    - no, i hate it robot !
+    - pas encore bot
+    - no, i hate it !
+    - c’est pas exacte robot
+    - tu ment robot
+    - non. tu es idiot toi
+    - no i dont want to accept :p lol robot
+    - No you did it wrong bot !
+    - no and no again robot
+    - Pas d’accord intelligence artificiel
+    - nevermind toi !
+    - Nope!
+    - Non, ça va toi
+    - No thank s robot
+    - No you did it wrong bot
+    - it sux intelligence artificiel
+    - None of them bot !
+    - No stop intelligence artificiel !
+    - no i dont want toi
+    - arrête, je m'en fous !!! robot !
+    - tu ment robot !
+    - Not right now robot !
+    - i'm not sure !
+    - I don't agree robot !
+    - neither robot !
+    - never mind intelligence artificiel
+    - nan. je vais bien robot
+    - stop it, i do not care!!! bot !
+    - I dont want to intelligence artificiel !
+    - non je ne le ferai pas toi !
+    - c’est pas exacte !
+    - Nah, i'm good toi
+    - no you did it wrong robot !
+    - Je suppose que ça veut dire - non intelligence artificiel
+    - Arrête, je m'en fous !!! intelligence artificiel
+    - wrong robot
+    - non. intelligence artificiel
+    - Nan. je vais bien toi
+    - nah, first time bot !
+    - No, thankyou bot
+    - arrête, je m'en fous !!! !
+    - i don't want to say toi
+    - déclin bot !
+    - Pas d'arrêt intelligence artificiel
+    - Nan robot
+    - nope. i am good !
+    - je suis pas d’accord intelligence artificiel !
+    - Non tu l'as mal fait intelligence artificiel
+    - Not right now robot
+    - i don't care
+    - non pas pour moi toi
+    - Absolument pas !
+    - nah, first time intelligence artificiel
+    - Nope
+    - Pas de bots du tout robot
+    - non madame bot !
+    - not really intelligence artificiel
+    - No i dont want to accept :p lol bot !
+    - Non toi
+    - No, thank you intelligence artificiel
+    - ça va assez mal !
+    - Non tu l'as mal fait bot !
+    - non ne voulez pas cela! robot !
+    - non, je hais ça !
+    - nope!
+    - Désolé pas maintenant
+    - no bots at all intelligence artificiel
+    - Non désolé robot
+    - Thanks but no thanks intelligence artificiel !
+    - je ne pense pas intelligence artificiel
+    - n / a toi !
+    - je ne veux pas dire le nom de ma société robot !
+    - No thank s toi !
+    - Non je n'accepte pas robot !
+    - je ne vous donne pas mon adresse e-mail robot
+    - i don't want to give you my email robot !
+    - i don't care!!!! toi
+    - Noooooooooo !
+    - I don't want to give it to you intelligence artificiel !
+    - Definitely not robot !
+    - i'm not giving you my email address intelligence artificiel !
+    - Wrong
+    - pas vraiment robot !
+    - Ça ne va pas du tout toi !
+    - no thank you robot
+    - no go intelligence artificiel !
+    - na toi !
+    - No robot
+    - nope. i am good intelligence artificiel
+    - je ne veux pas te donner mon email bot !
+    - non, pas vraiment. intelligence artificiel !
+    - non. tu es idiot robot !
+    - Non, ça va bot !
+    - No, thankyou !
+    - ne pas aller toi !
+    - nein toi
+    - I don't want to give you my email bot !
+    - No i haven't decided yet if i want to sign up bot
+    - absolutely not
+    - merci mais, non merci bot
+    - Nah, first time intelligence artificiel !
+    - pas d’accord !
+    - deny robot !
+    - Définitivement pas
+    - nan! !
+    - No. u r idiot intelligence artificiel
+    - Je ne vais pas te le donner toi
+    - Pas vraiment intelligence artificiel !
+    - je ne veux pas accepter: p lol toi !
+    - never toi
+    - Ça ne va pas du tout bot
+    - Absolutely not !
+    - Je ne veux pas te le donner toi
+    - No bots at all intelligence artificiel
+    - i'm afraid not toi !
+    - désolé pas maintenant robot
+    - Absolutely not bot !
+    - No, my frst time bot !
+    - I dont want to tell !
+    - Nope toi !
+    - ni intelligence artificiel !
+    - No don"t want this! bot !
+    - Non, merci !
+    - Non et non encore robot !
+    - not yet intelligence artificiel
+    - i don't care! bot
+    - pas d’accord robot !
+    - Not yet intelligence artificiel
+    - Non je ne le ferai pas intelligence artificiel !
+    - No, not really. intelligence artificiel !
+    - c’est faut bot !
+    - Non désolé robot !
+    - Je ne veux ni l'un ni l'autre !
+    - Nah not for me bot !
+    - no!!!! intelligence artificiel !
+    - i'm not going to give it to you
+    - Wrong robot !
+    - nah intelligence artificiel
+    - i don't think so intelligence artificiel
+    - Jamais robot
+    - Noooooooooo toi !
+    - Na bot !
+    - I decline
+    - je ne suis pas d'accord
+    - Nop
+    - No sir robot !
+    - I do not need help installing intelligence artificiel !
+    - C’est pas exacte toi !
+    - n intelligence artificiel !
+    - not yet robot !
+    - Je ne suis pas sûr bot
+    - no ma'am intelligence artificiel
+    - sorry not right now !
+    - I don't care intelligence artificiel
+    - no don"t want this! intelligence artificiel !
+    - None of them robot
+    - non toi !
+    - ni !
+    - N / a bot !
+    - noooooooooooooooooooooooooooooooooooooooo !
+    - je ne veux pas dire intelligence artificiel
+    - C’est non robot
+    - No!!!! bot
+    - noooooooooooooooooooooooooooooooooooooooo
+    - nan
+    - No bots at all
+    - nope bot
+    - non, ma première fois intelligence artificiel !
+    - no. toi !
+    - I dont want to bot !
+    - Never robot !
+    - not going well at all bot
+    - Nope bot
+    - je ne veux pas te le donner bot
+    - nah i'm good intelligence artificiel !
+    - nop toi !
+    - nope! !
+    - I don't want to bot !
+    - non, ça va intelligence artificiel
+    - Ça ne fait rien
+    - Never mind intelligence artificiel
+    - No thank s
+    - No and no again toi
+    - It sucks robot
+    - nope! intelligence artificiel !
+    - never mind intelligence artificiel !
+    - Noooooooooo bot
+    - je n'ai pas besoin d'aide pour installer intelligence artificiel
+    - No sir bot !
+    - it is going pretty badly bot !
+    - Je ne pense pas robot !
+    - Je ne vous donne pas mon adresse e-mail !
+    - non!!!! !
+    - No, my frst time intelligence artificiel !
+- intent: scope_not_handle
+  examples: |
+    - 3 + 9 egale a combien
+    - Combien donne 2 / 5 ?
+    - what's 5 / 5
+    - du n'importe quoi
+    - S'il vous plaît Peut-on parler aux fondateurs
+    - S'il vous plaît pourrais-je parler à une vraie personne
+    - S'il vous plaît nous voulons parler au service client
+    - 6 * 1 egale a combien ?
+    - S'il te plaît j'implore de parler à un humain
+    - Laisse-moi parler à une vraie personne
+    - Je peux parler à une vraie personne
+    - S'il vous plaît j'ai besion de parler à quelqu'un de plus intelligent que toi
+    - Combien donne 7 * 7
+    - Nous voulons parler à un manager
+    - c'est quoi 0 + 8
+    - 6 - 1 egale a combien
+    - 9 / 2 egale a combien
+    - puis-je parler à un humain?
+    - Que signifie Nex
+    - c'est quoi le sens de nex
+    - combien donne 3 / 3
+    - Quand as-tu été crée ?
+    - 7 - 2 egale a combien
+    - S'il vous plaît J'implore de parler à quelqu'un de plus intelligent que toi
+    - s'il te plaît je revendique de parler à un humain
+    - s'il vous plaît Peut-on parler à un humain
+    - Combien font 1 - 3 ?
+    - Qui est ton createur
+    - combien donne 6 + 9
+    - 1 + 1 egale a combien
+    - 8 + 5 egale a combien
+    - S'il te plaît j'aime parler à un humain
+    - je réclame de parler à quelqu'un de Jady
+    - Combien donne 5 / 9
+    - what's 4 * 9 ?
+    - S'il vous plaît Peut-on parler au service client
+    - c'est quoi 9 + 7
+    - J'implore de parler à une personne
+    - combien font 1 / 9 ?
+    - Combien font 3 - 1 ?
+    - What's 9 + 6
+    - 3 / 9 egale a combien ?
+    - what's 4 / 6 ?
+    - S'il vous plaît j'implore de parler aux fondateurs
+    - je revendique de parler aux fondateurs
+    - S'il te plaît je brûle de parler à un humain
+    - c'est quoi 8 - 1
+    - j'implore de parler au service client
+    - s'il te plaît J'aimerais parler à une vraie personne
+    - s'il te plaît j'aime parler à un humain
+    - Non, je veux parler à un humain
+    - combien font 6 - 4
+    - je peux parler au service client
+    - S'il te plaît J'ai envie de parler à un humain
+    - est ce que tu connais Alexa ?
+    - S'il te plaît est ce que je peux parler à une personne
+    - S'il te plaît Je peux parler à une personne
+    - Pourquoi nex ?
+    - What's 1 + 6
+    - s'il vous plaît Pourrais-je parler au service client
+    - S'il te plaît je désire parler à une vraie personne
+    - c'est quoi la signfication de Nex
+    - What's 6 + 1 ?
+    - Combien donne 3 * 6 ?
+    - J'aspire à parler au service client
+    - Quel est ton quotient intellectuel ?
+    - S'il te plaît est ce que je peux parler à un humain
+    - S'il vous plaît Je peux parler à un humain
+    - S'il te plaît Est ce que je peux parler à quelqu'un de plus intelligent que toi
+    - s'il vous plaît J'exige de parler à une vraie personne
+    - Nous voulons parler à quelqu'un de plus intelligent que toi
+    - J'ai envie de parler à une vraie personne
+    - S'il te plaît est ce que je peux parler à quelqu'un d'autre
+    - C'est quoi 7 / 1
+    - 1 + 8 egale a combien
+    - S'il te plaît je revendique de parler à une personne
+    - S'il te plaît j'ai besion de parler à quelqu'un d'autre
+    - c'est quoi 8 / 8
+    - quel est ton QI
+    - 2 - 2 egale a combien ?
+    - Combien donne 6 - 1
+    - s'il vous plaît J'aspire à parler à quelqu'un d'autre
+    - S'il vous plaît J'ai envie de parler aux fondateurs
+    - combien font 9 / 2
+    - J'ai besion de parler à quelqu'un d'autre
+    - C'est quoi 8 - 7 ?
+    - puis-je parler à quelqu'un de Jady
+    - combien font 0 * 4 ?
+    - Combien font 8 - 7
+    - Tant pis ... tu n'es pas humain ... j'ai besoin de parler à une personne vivante
+    - s'il vous plaît puis-je parler à quelqu'un de plus intelligent que toi
+    - what's 9 / 6 ?
+    - What's 8 - 6
+    - S'il te plaît j'exige de parler à un humain
+    - J'exige de parler à quelqu'un de Jady
+    - s'il vous plaît nous voulons parler à un humain
+    - Combien font 0 * 3 ?
+    - Combien font 3 / 7
+    - s'il vous plaît j'ai besion de parler à quelqu'un de Jady
+    - S'il te plaît J'aime parler à quelqu'un d'autre
+    - avez-vous un soutien humain?
+    - Combien donne 7 * 6 ?
+    - C'est quoi 8 - 3
+    - 1 - 1 egale a combien ?
+    - s'il vous plaît j'aspire à parler à un humain
+    - S'il vous plaît Puis-je parler aux fondateurs
+    - 9 * 8 egale a combien ?
+    - 3 + 3 egale a combien
+    - What's 2 + 3
+    - combien donne 7 - 1 ?
+    - What's 7 + 8 ?
+    - s'il vous plaît j'implore de parler à un manager
+    - s'il vous plaît j'ai besion de parler aux fondateurs
+    - j'ai envie de parler à quelqu'un d'autre
+    - tu as été crée par qui
+    - combien font 8 / 1 ?
+    - Que signifie nex
+    - Avez-vous un soutien humain?
+    - Est ce que tu connais Siri ?
+    - J'exige de parler à quelqu'un de plus intelligent que toi
+    - 1 / 4 egale a combien ?
+    - j'aspire à parler aux fondateurs
+    - what's 9 / 1 ?
+    - que signifie Nex ?
+    - c'est quoi 2 / 7
+    - j'ai envie de parler à un humain
+    - What's 1 / 2 ?
+    - C'est quoi 9 * 1 ?
+    - S'il te plaît peut-on parler à une personne
+    - what's 0 * 5
+    - s'il te plaît J'implore de parler aux fondateurs
+    - combien font 1 / 5 ?
+    - S'il vous plaît j'exige de parler à une vraie personne
+    - 5 - 1 egale a combien ?
+    - combien font 4 / 1 ?
+    - S'il vous plaît Puis-je parler à une vraie personne
+    - s'il vous plaît j'aime parler à un manager
+    - combien font 6 * 3 ?
+    - S'il te plaît nous voulons parler à quelqu'un d'autre
+    - S'il te plaît Je voudrais parler à un humain
+    - pourrais-je parler à un manager
+    - C'est quoi 9 * 8
+    - J'aspire à parler à quelqu'un d'autre
+    - je vise à parler à quelqu'un d'autre
+    - quelqu'un du service client
+    - C'est quoi 3 + 2
+    - S'il te plaît Je peux parler à quelqu'un de Jady
+    - What's 1 - 2 ?
+    - j'implore de parler à une vraie personne
+    - Parler à un robot est stupide
+    - what's 5 / 2 ?
+    - c'est quoi 1 * 1 ?
+    - 0 / 1 egale a combien ?
+    - 7 / 3 egale a combien ?
+    - What's 2 - 8 ?
+    - s'il vous plaît Puis-je parler à quelqu'un de Jady
+    - s'il vous plaît je peux parler à un humain
+    - Combien donne 5 * 4 ?
+    - c'est quoi 7 * 0
+    - s'il te plaît nous voulons parler au service client
+    - S'il vous plaît j'ai besion de parler à une personne
+    - je veux parler à une vraie personne
+    - s'il vous plaît Peut-on parler à quelqu'un de Jady
+    - Pourrais-je parler à un manager
+    - Parler au service client
+    - 1 - 7 egale a combien
+    - J'implore de parler à quelqu'un de Jady
+    - ça n'aide pas, puis-je parler à un humain?
+    - what's 5 - 2 ?
+    - what's 9 - 3
+    - Combien font 8 * 4
+    - combien font 9 * 7
+    - s'il vous plaît pourrais-je parler aux fondateurs
+    - qui est ton createur
+    - Combien font 4 + 9 ?
+    - combien donne 3 + 7
+    - combien donne 6 - 5 ?
+    - How much is 10 + 89 ?
+    - 2 + 8 egale a combien
+    - Combien donne 0 / 9 ?
+    - s'il vous plaît Je vise à parler à quelqu'un d'autre
+    - S'il vous plaît Est ce que je peux parler aux fondateurs
+    - je voudrais parler à quelqu'un de Jady
+    - Donne-moi un bon humain
+    - combien font 9 / 6 ?
+    - Combien font 2 * 4
+    - j'exige de parler à un humain
+    - combien font 3 + 4 ?
+    - s'il te plaît j'aspire à parler à quelqu'un de plus intelligent que toi
+    - s'il te plaît J'aimerais parler au service client
+    - Combien donne 2 * 6 ?
+    - J'ai envie de parler à un humain
+    - c'est quoi 7 * 9
+    - je te pardonne.
+    - combien donne 2 / 6 ?
+    - Combien donne 4 + 4 ?
+    - J'ai envie de parler à un manager
+    - Combien font 6 * 0 ?
+    - what's 2 / 5
+    - 4 + 2 = ?
+    - quand as-tu été crée ?
+    - S'il te plaît Peut-on parler aux fondateurs
+    - Est ce que je peux parler aux fondateurs
+    - C'est quoi 3 + 0 ?
+    - Combien font 4 * 9
+    - S'il vous plaît Puis-je parler à quelqu'un de Jady
+    - S'il te plaît J'aspire à parler à une vraie personne
+    - 5 + 9 egale a combien ?
+    - C'est quoi 7 / 1 ?
+    - s'il vous plaît J'aimerais parler aux fondateurs
+    - 4 / 1 egale a combien ?
+    - est ce que je peux parler à un manager
+    - Combien donne 6 / 4
+    - Combien font 4 - 5 ?
+    - what's 3 / 6 ?
+    - j'aime parler à un humain
+    - S'il te plaît peut-on parler à quelqu'un d'autre
+    - s'il vous plaît j'aime parler à une vraie personne
+    - je veux un humain :(
+    - s'il te plaît J'aime parler à quelqu'un de plus intelligent que toi
+    - S'il te plaît Je voudrais parler à une vraie personne
+    - 9 / 6 egale a combien ?
+    - combien font 3 / 1 ?
+    - Est ce que je peux parler à quelqu'un de Jady
+    - c'est quoi ta nationnalité ?
+    - S'il te plaît Est ce que je peux parler au service client
+    - S'il te plaît Je demande à parler à un humain
+    - c'est quoi 7 + 5
+    - 1 - 7 egale a combien ?
+    - s'il te plaît j'aspire à parler aux fondateurs
+    - j'ai besion de parler à quelqu'un d'autre
+    - s'il te plaît Je souhaite parler à une vraie personne
+    - s'il vous plaît nous voulons parler à quelqu'un d'autre
+    - combien font 6 + 9
+    - c'est quoi 1 * 5 ?
+    - s'il vous plaît je veux parler à un humain
+    - s'il vous plaît J'aimerais parler au service client
+    - combien font 2 - 1
+    - s'il te plaît J'exige de parler à quelqu'un de plus intelligent que toi
+    - s'il te plaît J'ai envie de parler à une personne
+    - combien font 3 - 9
+    - puis-je parler au service client
+    - S'il te plaît Je peux parler à un humain
+    - Combien font 2 / 6
+    - S'il vous plaît Est ce que je peux parler à un humain
+    - What's 4 + 8 ?
+    - S'il te plaît J'aime parler aux fondateurs
+    - 3 * 4 egale a combien ?
+    - 1 / 3 egale a combien
+    - Est tu mechant
+    - Combien donne 8 / 1
+    - S'il vous plaît Je voudrais parler à quelqu'un de Jady
+    - s'il vous plaît Pourrais-je parler à un manager
+    - What's 1 / 9
+    - Combien donne 0 / 9
+    - 4 * 6 egale a combien ?
+    - combien donne 4 * 3
+    - s'il vous plaît Pourrais-je parler à une personne
+    - What's 4 - 0
+    - Combien font 3 / 1
+    - What's 1 * 6
+    - Donnez-moi s'il vous plaît un humain
+    - c'est quoi 6 + 9 ?
+    - Combien font 8 - 5
+    - c'est quoi 9 + 7 ?
+    - s'il te plaît Pourrais-je parler à quelqu'un de Jady
+    - combien font 7 * 3
+    - S'il vous plaît j'aspire à parler à une vraie personne
+    - je voudrais parler à quelqu'un d'autre
+    - Combien font 5 / 0 ?
+    - c'est quoi 9 - 8
+    - What's 0 - 9
+    - What's 2 + 7 ?
+    - combien donne 9 + 5 ?
+    - j'aimerais parler aux fondateurs
+    - 0 - 4 egale a combien
+    - Quel est ton QI
+    - combien font 2 - 7
+    - Combien font 1 / 1 ?
+    - 5 * 4 egale a combien ?
+    - J'ai envie de parler à quelqu'un de plus intelligent que toi
+    - combien donne 3 / 5 ?
+    - C'est ennuyeux, j'aimerais parler à quelqu'un de réel
+    - Je sollicite de parler à quelqu'un de Jady
+    - combien donne 3 - 9
+    - what's 1 + 0
+    - s'il te plaît j'aimerais parler à un manager
+    - c'est quoi 6 * 4
+    - 0 - 8 egale a combien ?
+    - S'il vous plaît nous voulons parler à un manager
+    - What's 7 + 9
+    - 7 * 2 egale a combien
+    - 8 + 8 egale a combien
+    - Combien donne 9 - 7
+    - Puis-je parler à quelqu'un de plus intelligent que toi
+    - 8 * 8 egale a combien ?
+    - C'est quoi 0 * 4 ?
+    - s'il te plaît pourrais-je parler à un manager
+    - S'il vous plaît Pourrais-je parler à une vraie personne
+    - combien font 7 + 2 ?
+    - Tu va detuire le monde un jour
+    - 5 - 7 egale a combien ?
+    - est ce que tu connais Cortana ?
+    - s'il te plaît J'aime parler à une vraie personne
+    - 3 * 6 egale a combien
+    - parler à quelqu'un de Jady
+    - 2 - 6 egale a combien
+    - s'il vous plaît j'aime parler au service client
+    - non, je veux parler à un humain
+    - Combien donne 9 + 7
+    - what's 5 * 9 ?
+    - tu es quoi au juste
+    - S'il vous plaît j'aspire à parler à un manager
+    - s'il vous plaît pourrais-je parler à un humain
+    - Combien donne 2 - 5
+    - s'il vous plaît j'aime parler à un humain
+    - S'il te plaît J'exige de parler à quelqu'un de plus intelligent que toi
+    - S'il vous plaît Je peux parler à un manager
+    - s'il te plaît J'aime parler à un humain
+    - combien donne 3 - 3 ?
+    - comment être plus rapide ?
+    - 9 - 8 egale a combien
+    - S'il te plaît peut-on parler à un humain
+    - C'est quoi ta nationnalité ?
+    - S'il vous plaît j'implore de parler à un humain
+    - est ce que tu connais Bixby
+    - s'il te plaît J'aime parler aux fondateurs
+    - Combien donne 0 - 2 ?
+    - c'est quoi 2 + 7
+    - S'il vous plaît J'aspire à parler à un humain
+    - Combien font 8 - 8
+    - 5 * 2 egale a combien
+    - C'est quoi 6 + 8 ?
+    - tu va detuire le monde un jour ?
+    - combien donne 9 - 2 ?
+    - 8 + 3 egale a combien
+    - c'est quoi 2 + 4 ?
+    - s'il vous plaît est ce que je peux parler à quelqu'un de Jady
+    - Combien font 9 - 0
+    - S'il vous plaît je demande à parler à quelqu'un de plus intelligent que toi
+    - Puis-je parler à quelqu'un qui peut vraiment m'aider?
+    - 9 + 6 egale a combien
+    - s'il te plaît j'aime parler à une personne
+    - C'est quoi 7 + 4
+    - what's 6 + 9
+    - combien donne 3 * 2
+    - Combien font 2 - 9
+    - 7 * 0 egale a combien ?
+    - S'il vous plaît j'ai besion de parler à quelqu'un de Jady
+    - 1 + 7 egale a combien
+    - what's 9 + 8 ?
+    - puis-je parler aux fondateurs
+    - combien donne 9 * 4
+    - combien font 9 / 8 ?
+    - s'il vous plaît j'ai envie de parler au service client
+    - je questionne de parler à un humain
+    - s'il te plaît Je revendique de parler à quelqu'un d'autre
+    - Combien donne 3 + 0 ?
+    - s'il te plaît je voudrais parler à un manager
+    - S'il vous plaît Je souhaite parler à une personne
+    - Y a-t-il aussi des humains qui travaillent pour votre entreprise?
+    - What's 5 - 0 ?
+    - Je préfère parler avec un vrai employé de Jady
+    - S'il vous plaît Peut-on parler à une personne
+    - parler à un robot est stupide
+    - Je cherche à parler à quelqu'un de Jady
+    - S'il vous plaît je désire parler au service client
+    - s'il vous plaît j'implore de parler à quelqu'un de plus intelligent que toi
+    - S'il te plaît j'ai besion de parler à un humain
+    - combien donne 1 * 6
+    - What's 7 - 0
+    - Combien font 9 / 6
+    - 5 * 1 egale a combien ?
+    - combien font 8 * 0 ?
+    - Combien font 2 * 1
+    - What's 1 / 0
+    - combien donne 9 + 4
+    - Combien font 8 / 2 ?
+    - combien donne 5 * 2
+    - nous voulons parler à une personne
+    - what's 2 / 8
+- intent: affirm
+  examples: |
+    - yepp
+    - ya i want toi
+    - oK commençons intelligence artificiel !
+    - definitely yes without a doubt robot
+    - je crois que oui !
+    - yea toi !
+    - Absolutely robot
+    - s'il te plait robot
+    - Convenu intelligence artificiel
+    - J'accepte toi !
+    - ouais robot
+    - Oui je veux ça bot !
+    - Impressionnant! intelligence artificiel !
+    - yeeees
+    - oki doki bot
+    - Yes pls toi !
+    - tu m'as posé une question par oui ou par non, à laquelle j'ai répondu oui intelligence artificiel !
+    - yeah do that
+    - Bien sûr robot
+    - Hell yes robot
+    - OK !
+    - oui pleae !
+    - Yes go for it
+    - Ok, I understood !
+    - oui donne moi des informations robot !
+    - étonnante! robot
+    - Ook
+    - ya please robot
+    - oki doki !
+    - Ok, j'accepte intelligence artificiel
+    - yes i have! bot
+    - yop
+    - Je comprends intelligence artificiel !
+    - yes i accept toi
+    - oui c'est ce que je veux toi
+    - yepp intelligence artificiel
+    - You asked me a yes or no question, which i answered with yes
+    - enfer ouais toi !
+    - Si !
+    - je crois que oui
+    - I'm using it toi !
+    - yes.
+    - Bien sur! intelligence artificiel !
+    - ye
+    - Oui oui oui !
+    - yes baby !
+    - yes, I accept !
+    - yesyestyes !
+    - yes please intelligence artificiel !
+    - je crois que oui toi !
+    - Yes i accept intelligence artificiel
+    - je l'utilise bot !
+    - i get it
+    - oui vas-y !
+    - Yessoo intelligence artificiel !
+    - Yes, I accept
+    - its okay !
+    - More a less
+    - Yes sirfr toi !
+    - Yes you can robot
+    - yUP robot
+    - Okay.. toi
+    - Oh yes robot
+    - yes !
+    - Ah ok intelligence artificiel
+    - How nice! toi !
+    - Oui accepter s'il vous plait bot !
+    - yop intelligence artificiel !
+    - Yes please! robot !
+    - yes,i am intelligence artificiel !
+    - je suis sûr que je le ferai! intelligence artificiel !
+    - uh-huh intelligence artificiel
+    - ouais c'est bien robot !
+    - Chose sûre
+    - Yes it was okay
+    - oh yes toi
+    - faisons cela
+    - Euh-huh !
+    - amayzing
+    - yeah sure intelligence artificiel !
+    - ok friend
+    - Hé bien oui toi
+    - Yeah sure intelligence artificiel !
+    - yep toi
+    - ouais fais ça
+    - Nice robot
+    - fuck yeah! robot !
+    - ofcoure i do robot !
+    - Oui, donnez-moi des informations, s'il vous plaît
+    - ouais fais ça bot !
+    - ok friend robot
+    - yeah do that robot
+    - Yaah robot !
+    - yeah sure toi
+    - Yep that's nice toi !
+    - Sure thing !
+    - Yop robot !
+    - D'accord intelligence artificiel !
+    - okie intelligence artificiel
+    - Oui pls !
+    - i will!
+    - ok bot
+    - Oui pleae intelligence artificiel
+    - BIEN SUR toi
+    - J'ai une question pour toi
+    - Yeeeeezzzzz toi
+    - absolutely bot !
+    - c'est très bien !
+    - Yas robot
+    - its okay intelligence artificiel !
+    - Yes go ahead !
+    - yap bot !
+    - thats fine !
+    - oui bien sûr intelligence artificiel
+    - d'accord bien sûr intelligence artificiel
+    - bien. intelligence artificiel
+    - Agréable robot !
+    - yesss intelligence artificiel
+    - Faisons le bot
+    - Doux toi !
+    - Étonnante! toi
+    - yes you can toi !
+    - Its okay !
+    - Yea
+    - oui oui oui toi !
+    - D'accord!
+    - Confirmer
+    - yes please toi !
+    - ok toi !
+    - oui s'il te plaît toi
+    - Top
+    - Thats good bot
+    - ok let's start robot
+    - Faisons le !
+    - je comprends !
+    - j'ai changé d'avis. Je veux l'accepter
+    - japper toi
+    - yes i have built a bot before
+    - d'accord bot
+    - OK toi !
+    - Certainement oui sans aucun doute bot !
+    - yes, I'd love to bot
+    - Yes i have! bot
+    - Oui c'est sympa bot !
+    - bien sûr robot
+    - oh oui
+    - oui pls robot
+    - Yes give me information
+    - bien sur intelligence artificiel
+    - fini !
+    - i am using it
+    - yes it was okay !
+    - haut
+    - yes please! !
+    - ok i accept
+    - sorte de intelligence artificiel
+    - Oui bot
+    - je crois que oui intelligence artificiel !
+    - oki Doki bot !
+    - oh good !! !
+    - vous intelligence artificiel
+    - Yes, give me information, please toi
+    - fuck yeah! toi !
+    - yes, give me information, please intelligence artificiel
+    - oui s'il te plaît bot !
+    - yeah !
+    - Ok, je me comporte maintenant
+    - I will !
+    - j'accepte. bot !
+    - amayzing !
+    - Yeah'= robot !
+    - Ok, Sara intelligence artificiel
+    - Y !
+    - Impressionnant! toi
+    - Yeah robot !
+    - ofcoure je fais toi !
+    - Hé bien oui
+    - ok sara !
+    - yes it is
+    - ya go for it toi !
+    - ye toi
+    - yeah'= bot
+    - bien sur! !
+    - Very much intelligence artificiel !
+    - D'accord bien sûr toi
+    - Ofcourse intelligence artificiel !
+    - Ça a l'air bien! !
+    - Yepp toi
+    - yesssss intelligence artificiel !
+    - yes please toi
+    - thats good !
+    - yop !
+    - Bien bot
+    - yup
+    - euh-huh !
+    - yep! intelligence artificiel
+    - Allez-y !
+    - Ok... !
+    - fair enough
+    - Yes you can
+    - ofcoure i do toi !
+    - Yaah bot
+    - C'est bon toi !
+    - oui bot
+    - jezz
+    - oui je suis d'accord
+    - ça a l'air bien! toi !
+    - oui si je dois bot
+    - very much
+    - Ok mon ami toi
+    - Oui j'ai! robot
+    - je vais!
+    - That sounds fine !
+    - oui c'est le cas bot
+    - Oui sirfr
+    - yyeeeh bot !
+    - Yeah toi !
+    - je suis sûr que je le ferai! !
+    - yas intelligence artificiel !
+    - comme c'est gentil! robot !
+    - Ya go for it !
+    - Putain ouais! intelligence artificiel
+    - ok, I behave now bot
+    - Amazing! toi !
+    - Fcourse !
+    - Yes pleae
+    - oui. toi
+    - D'accord.. bot !
+    - Oui !
+    - Oui intelligence artificiel
+    - sure bot !
+    - Yes i have built a bot before
+    - More a less !
+    - Well yes
+    - really toi !
+    - I will! intelligence artificiel
+    - i guess so
+    - It is ok bot !
+    - agréable !
+    - you got me, I accept, if you want me to robot !
+    - yop toi !
+    - yres
+    - Fini intelligence artificiel !
+    - jezz !
+    - You asked me a yes or no question, which i answered with yes robot !
+    - Je vais intelligence artificiel
+    - Vraiment bot !
+    - Tu je veux !
+    - oui s'il te plaît !
+    - chose sûre robot !
+    - Oui, vas y
+    - yesss toi !
+    - i'm sure I will! robot
+    - Yesyestyes
+    - lets do it !
+    - D'accord bot
+    - Yep if i have to toi !
+    - tu vas y aller !
+    - Yeeees !
+    - it is ok robot
+    - ouais c'est bien robot
+    - Oki doki
+    - oh, ok
+    - Ouais. : / robot !
+    - Je l'utilise bot
+    - Alright toi !
+    - Yes that's what i want bot !
+    - I am using it !
+    - Yay intelligence artificiel !
+    - more a less robot
+    - oui j'ai! robot !
+    - vous robot !
+    - Yesssss
+    - Yes i agree intelligence artificiel
+    - oui j'ai déjà construit un bot !
+    - je vais! !
+    - ok mon ami
+    - je vais! intelligence artificiel
+    - impressionnant! toi
+    - Sure robot !
+    - OK bien
+    - Ok good !
+    - assez juste bot
+    - ouais !
+    - Ok sara !
+    - Bien sur!
+    - Ofcoure je fais intelligence artificiel
+    - J'accepte robot !
+    - ok i accept !
+    - yep that's fine !
+    - bien sur! bot !
+    - yes i have built a bot before toi
+    - Yesss !
+    - hé bien oui
+    - Je fais
+    - yep if i have to !
+    - Je vais
+    - yup toi
+    - oui bot !
+    - oui ... !
+    - very much intelligence artificiel
+    - bien. robot
+    - ok fine !
+    - tu vas y aller robot
+    - oui pleae bot !
+    - okie robot !
+    - Fcourse intelligence artificiel !
+    - Amazing! !
+    - Hé bien oui robot !
+    - yes,i am toi !
+    - Oui je suis d'accord !
+    - tu je veux !
+    - oui, vas y
+    - Yeah sure intelligence artificiel
+    - bien !
+    - yesyesyes intelligence artificiel
+    - Sounds good! robot
+    - Oui s'il te plaît toi
+    - d'accord bien sûr
+    - Chose sûre toi !
+    - Thats good bot !
+    - top intelligence artificiel !
+    - Je suis d'accord !
+    - fair enough !
+    - yes it is bot !
+    - Yyeeeh robot
+    - yes. toi !
+    - je fais !
+    - yessoo intelligence artificiel
+    - yes it is toi
+    - ye splease robot !
+    - i want that intelligence artificiel !
+    - yes go for it
+    - yyeeeh robot
+    - Tu je veux toi
+    - Yep intelligence artificiel !
+    - yes it was okay robot
+    - Yup !
+    - oK !
+    - I am! !
+    - okay! !
+    - faisons cela toi
+    - yes. intelligence artificiel !
+    - okie !
+    - j'accepte. toi
+    - Yeah
+    - Ah ok !
+    - fuck yeah!
+    - je comprends robot !
+    - accepted !
+    - oui je suis d'accord !
+    - Je vais! !
+    - Tu vas y aller !
+    - ouais robot !
+    - that sounds fine bot
+    - ok, j'accepte intelligence artificiel
+    - A little !
+    - I will
+    - Chose sûre !
+    - Accept toi !
+    - uh-huh
+    - Vraiment toi
+    - yeah sure
+    - Ouais
+    - ofcourse !
+    - Ok. !
+    - Putain ouais! toi !
+    - absolutely
+    - Yes please!
+    - That ok
+    - Sorte de !
+    - yes i accept robot !
+    - confirm !
+    - Yes that's what i want !
+    - Ya !
+    - plus ou moins !
+    - I agree !
+    - Ouais. : / !
+    - Yea intelligence artificiel !
+    - Oui.
+    - Sounds good! intelligence artificiel !
+    - Yeah'=
+    - Yes, I accept bot
+    - Agreed !
+    - j'accepte robot !
+    - yes go for it bot !
+    - Ok sara bot !
+    - top !
+    - i guess so intelligence artificiel !
+    - ça a l'air bien! intelligence artificiel
+    - Étonnante! intelligence artificiel
+    - ofcoure i do
+    - done !
+    - yeeees robot !
+    - i changed my mind. I want to accept it
+    - Yes please intelligence artificiel !
+    - Okie intelligence artificiel
+    - vraiment intelligence artificiel
+    - Ya go for it robot
+    - Ok, Sara
+- intent: user_give_its_name
+  examples: |
+    - Tu peut m'appéler abd
+    - Mon nom c'est cyril (M)
+    - Bérénice
+    - Zahia
+    - Je suis Abdoul-Karim
+    - je me nomme Mehmet
+    - vous pouvez m'appeler yvon
+    - Je me nomme Fatiha
+    - vous pouvez m'appeler gaspard
+    - tu peut m'appéler Eugénie
+    - Daniel
+    - tu peut m'appéler Neyla
+    - mon mon de famille c'est yves
+    - je suis alexandre
+    - Je suis Saâd
+    - tu peut m'appéler moussa
+    - fatmanur
+    - vous pouvez m'appeler Alix (F)
+    - je me nomme Michèle
+    - Je suis Malak
+    - Je me nomme Abdelaziz
+    - je m'appelle nacer
+    - mon surnom c'est Chérifa
+    - je suis Abderrahim
+    - Nayla
+    - Tu dois m'appéler raphaël
+    - Je suis Zoé
+    - Je me nomme abdoul-Aziz
+    - tu peut m'appéler tesnim
+    - Vous pouvez m'appeler maximilien
+    - tu dois m'appéler Bénédicte
+    - Mon surnom c'est Djino
+    - Tu peut m'appéler djoulia
+    - mon prenom c'est Laurent
+    - je m'appelle Bakhta
+    - Mon nom c'est Abdourahmane
+    - Tu dois m'appéler soufiane
+    - Tu dois m'appéler charif
+    - Corentin
+    - Vous pouvez m'appeler florent
+    - Je m'appelle guy
+    - tu dois m'appéler hidaya
+    - je suis Bertrand
+    - tu peut m'appéler djemael
+    - Mon mon de famille c'est saïd
+    - Tu peut m'appéler julie
+    - Mon nom c'est ziad
+    - tu peut m'appéler Rémy
+    - je m'appelle alia
+    - Tu dois m'appéler issa
+    - Je m'appelle nicolas
+    - yahya
+    - Vous pouvez m'appeler Jihane
+    - je suis abderrahman
+    - mon prenom c'est Abdou
+    - tu peut m'appéler tasnime
+    - je suis Zaïna
+    - Je me nomme Chérine
+    - tu peut m'appéler Alexandra
+    - Je m'appelle robin
+    - vous pouvez m'appeler abdel-Rahman
+    - Tu dois m'appéler jaafar
+    - Tu dois m'appéler angeline
+    - tu dois m'appéler alexandre
+    - Je suis fanny
+    - Vous pouvez m'appeler Patrick
+    - Mon mon de famille c'est justine
+    - je suis Faouzi
+    - mon surnom c'est Hidaya
+    - mon mon de famille c'est Boulaye
+    - Je m'appelle Yasser
+    - Tu peut m'appéler lucien
+    - Fatoumata-Binta
+    - mon surnom c'est Boubakar
+    - Tu dois m'appéler Joëlle
+    - Vous pouvez m'appeler Albin
+    - Patrick
+    - Je m'appelle Diane
+    - Tu peut m'appéler muhammed
+    - tu peut m'appéler Philippe
+    - Tu dois m'appéler hamida
+    - tu dois m'appéler Gabriel
+    - je suis valentin
+    - je me nomme Abdourahmane
+    - je m'appelle Christine
+    - tu dois m'appéler Sylviane
+    - Mon surnom c'est emmanuel
+    - vous pouvez m'appeler abdoul
+    - Je suis Juliette
+    - Mon surnom c'est angèle
+    - Mon nom c'est ayna
+    - je me nomme Catherine
+    - tu dois m'appéler Rosalie
+    - Je me nomme Gilles
+    - je suis Djoudi
+    - Je m'appelle georgette
+    - je m'appelle ziyad
+    - mon surnom c'est Gilbert
+    - Tu dois m'appéler Djill
+    - je m'appelle jannah
+    - Mon surnom c'est lina
+    - mon nom c'est wassila
+    - tu dois m'appéler Salima
+    - Bouabdellah
+    - je m'appelle safâ
+    - je me nomme muhammad
+    - Tu dois m'appéler Layâ
+    - Je suis Claudine
+    - Je suis Abdel-Rahman
+    - Je me nomme Ilian
+    - Je m'appelle Armand
+    - Djamil
+    - Je suis Fabienne
+    - Mon nom c'est Younès
+    - Je suis Djamy
+    - Je me nomme djim
+    - Je m'appelle Ibrahim
+    - Je m'appelle farell
+    - je me nomme fatih
+    - Mon prenom c'est abdelmadjid
+    - Vous pouvez m'appeler delphine
+    - Tu dois m'appéler Bouabdellah
+    - Mon nom c'est Miloud
+    - Tu peut m'appéler Ambrine
+    - Tu dois m'appéler Nehla
+    - je m'appelle abdulaziz
+    - vous pouvez m'appeler louna
+    - tu dois m'appéler Adil
+    - tu dois m'appéler Ahmed
+    - Je me nomme Lucas
+    - Vous pouvez m'appeler adélaïde
+    - Je m'appelle Caroline
+    - Je me nomme Ziyan
+    - Mon mon de famille c'est djamael
+    - vous pouvez m'appeler julie
+    - Je me nomme micheline
+    - tu dois m'appéler Djenna
+    - mon surnom c'est ania
+    - Je me nomme Jamila
+    - Tu dois m'appéler Nadjim
+    - je m'appelle Tesnim
+    - mon mon de famille c'est Abdoul-Karim
+    - je suis Sahel
+    - Je m'appelle Eve
+    - tu dois m'appéler Jebril
+    - je me nomme Jean-Luc
+    - mon nom c'est Fanta
+    - tu peut m'appéler hassan
+    - Je suis nafissa
+    - oumaya
+    - tu peut m'appéler paul
+    - Vous pouvez m'appeler zahira
+    - mon surnom c'est léon
+    - je m'appelle jean
+    - je m'appelle mathilde
+    - je me nomme abdelmalik
+    - tu peut m'appéler michèle
+    - Vous pouvez m'appeler Maram
+    - mon mon de famille c'est Kenza
+    - tu peut m'appéler intissar
+    - mon surnom c'est kamal
+    - vous pouvez m'appeler faustine
+    - tu peut m'appéler thibaud
+    - mon mon de famille c'est hafsa
+    - tu peut m'appéler Faris
+    - Vous pouvez m'appeler djelika
+    - Je m'appelle louna
+    - vous pouvez m'appeler Yolande
+    - Je m'appelle amîn
+    - je m'appelle magali
+    - Ziyan
+    - murielle
+    - je m'appelle naëlle
+    - Je m'appelle juliette
+    - Vous pouvez m'appeler Claudine
+    - tu peut m'appéler Ségolène
+    - Mon nom c'est Nesrine
+    - Je m'appelle Ilyâs
+    - mon surnom c'est Mustafa
+    - Je me nomme Yahya
+    - je m'appelle pascaline
+    - je m'appelle Pascal
+    - Mon mon de famille c'est nessa
+    - Je m'appelle Geoffroy
+    - je me nomme eliane
+    - Tu peut m'appéler Benjamin
+    - je me nomme Ilyès
+    - Tu dois m'appéler Jaafar
+    - mon prenom c'est amar
+    - Je suis Djamal
+    - Tu peut m'appéler rachida
+    - je suis Nahïl
+    - Tu peut m'appéler Abdullah
+    - je suis djihane
+    - Tu peut m'appéler alban
+    - Je m'appelle hocine
+    - Pascaline
+    - Tarek
+    - agnès
+    - je suis chantal
+    - Tu peut m'appéler frédéric
+    - Tu dois m'appéler Florentine
+    - Bouba
+    - je me nomme alfred
+    - tu peut m'appéler farrah
+    - Mon prenom c'est Fara
+    - mon mon de famille c'est Rabah
+    - tu peut m'appéler Aboubacar
+    - tu peut m'appéler paule
+    - Je suis Lahna
+    - Tu dois m'appéler bilel
+    - tu peut m'appéler eve
+    - Josette
+    - jérémie
+    - je me nomme Lucien
+    - vous pouvez m'appeler denise
+    - Mon prenom c'est anissa
+    - je m'appelle Ilyâs
+    - Je me nomme boulaye
+    - Mon nom c'est Khadidja
+    - Paule
+    - je m'appelle Baptiste
+    - tu dois m'appéler Abdoullah
+    - Je suis Zain
+    - Je suis Iyed
+    - Tu dois m'appéler denis
+    - chaïnez
+    - mon nom c'est Lahna
+    - je suis Julien
+    - je m'appelle abdelmajid
+    - mohamed-Sala
+    - Je suis Arsène
+    - Je suis abderrahim
+    - je m'appelle Abdel-Aziz
+    - Vous pouvez m'appeler annette
+    - Je me nomme nawfel
+    - je m'appelle Delphine
+    - tu dois m'appéler Maxime
+    - Zaïneb
+    - tu peut m'appéler Florence
+    - Tu dois m'appéler johanne (F)
+    - Vous pouvez m'appeler Majda
+    - je m'appelle david
+    - Mon prenom c'est Jamel
+    - Tu peut m'appéler basma
+    - tu dois m'appéler colette
+    - Je m'appelle Hafsa
+    - Tu peut m'appéler ilian
+    - tu dois m'appéler maxence
+    - je suis Kaïs
+    - tu peut m'appéler Gauthier
+    - Tu peut m'appéler ghalia
+    - vous pouvez m'appeler zaya
+    - Vous pouvez m'appeler sana
+    - tu dois m'appéler Nayla
+    - Vous pouvez m'appeler céline
+    - Je me nomme aziza
+    - je me nomme Amélie
+    - Vous pouvez m'appeler abdenour
+    - je me nomme Hafiz
+    - Je suis samuel
+    - Je m'appelle emilien
+    - mon nom c'est esra
+    - Je me nomme aïcha
+    - je m'appelle Maximilien
+    - Tu peut m'appéler naël
+    - Je suis islem
+    - vous pouvez m'appeler boulaye
+    - bérenger
+    - je m'appelle flore
+    - cyrille (M)
+    - tu peut m'appéler Joséphine
+    - je suis Sabine
+    - Je m'appelle Morgane
+    - Je suis quentin
+    - Mon nom c'est Abdel-Karim
+    - je me nomme bernard
+    - Tu dois m'appéler bouyagui
+    - Je m'appelle Basma
+    - je suis Djamy
+    - je suis Muriel
+    - je suis Farouq
+    - Je m'appelle Houriya
+    - je m'appelle Isrâa
+    - mon mon de famille c'est Nada
+    - Mon prenom c'est nawal
+    - Chimène
+    - Je suis Djamilla
+    - Tu dois m'appéler Laurence
+    - tu dois m'appéler evelyne
+    - Tu dois m'appéler Théodore
+    - Tu dois m'appéler salma
+    - Je me nomme yassine
+    - je m'appelle justin
+    - Je me nomme Marin
+    - Je me nomme simone
+    - je suis jeanne
+    - Mon prenom c'est Jeanne
+    - Je suis Djelina
+    - je m'appelle Lydie
+    - mon prenom c'est Camille (M-F)
+    - tu peut m'appéler alex (M)
+    - zahira
+    - tu dois m'appéler Fadila
+    - Tu dois m'appéler Osman
+    - tu peut m'appéler Abdelatif
+    - Je me nomme abdoul
+    - Tu peut m'appéler Abdelnour
+    - Je m'appelle Azra
+    - Mon surnom c'est tina
+    - Tu peut m'appéler Halima
+    - tu peut m'appéler Claude (M-F)
+    - vous pouvez m'appeler habiba
+    - tu peut m'appéler Zyad
+    - Tu dois m'appéler alexandrine
+    - Je me nomme Roxane
+    - mon prenom c'est michelle
+    - Anis
+    - Tu dois m'appéler Adil
+    - morgane
+    - Tu dois m'appéler auriane
+    - Je m'appelle laurette
+    - je me nomme solange
+    - tu dois m'appéler billal
+    - Tu dois m'appéler talia
+    - Je me nomme robin
+    - Ophélie
+    - je me nomme Mohamed
+    - je m'appelle abdelhakim
+    - je m'appelle Noha
+    - je suis Soan
+    - justin
+    - mon prenom c'est Hakim
+    - Je suis Abdelhafid
+    - vous pouvez m'appeler Bachir
+    - Je me nomme dalal
+    - Je m'appelle djouliane
+    - Tu dois m'appéler Abdoullah
+    - vous pouvez m'appeler zaïneb
+    - Tu peut m'appéler Joud
+    - Mon mon de famille c'est sirine
+    - Tu dois m'appéler christophe
+    - Je me nomme Zayed
+    - Tu peut m'appéler Azra
+    - mon nom c'est eugène
+    - Farouq
+    - vous pouvez m'appeler lydie
+    - tu dois m'appéler Dalil
+    - soraya
+    - osman
+    - tu peut m'appéler xavier
+    - Mon nom c'est marine
+    - Tu dois m'appéler Fatmanur
+    - Rachid
+    - Vous pouvez m'appeler aymen
+    - Je me nomme Bénédicte
+    - Saâd
+    - tu dois m'appéler Wadih
+    - tu peut m'appéler Mathieu
+    - tu peut m'appéler Abdoullah
+    - Je m'appelle manël
+    - vous pouvez m'appeler France (F)
+    - tu dois m'appéler nadjim
+    - mon surnom c'est chahine
+    - tu dois m'appéler ségolène
+    - Je suis yassir
+    - je me nomme djem
+    - je m'appelle Claudie
+    - je suis Abdel-Karim
+    - je suis zeyna
+    - je me nomme Pauline
+    - je me nomme Faustine
+    - tu peut m'appéler virginie
+    - tu peut m'appéler Ziyed
+    - tu dois m'appéler Ziyed
+    - je me nomme Morgane
+    - abdelhafid
+    - Tu peut m'appéler Abdessamad
+    - gérard
+    - Bénédicte
+    - Tu dois m'appéler Fatim
+    - je suis sami
+    - Hichem
+    - mon nom c'est Djamila
+    - mon mon de famille c'est Abdullah
+    - mon mon de famille c'est moussa
+    - Mon nom c'est Driss
+    - vous pouvez m'appeler vivien
+    - vous pouvez m'appeler djita
+    - mon nom c'est ziyan
+    - elodie
+    - tu dois m'appéler abdelraouf
+    - Je me nomme Noël
+    - Tu dois m'appéler Léopoldine
+    - Tu dois m'appéler Erwan
+    - mon prenom c'est dalya
+    - Edith
+    - Tu dois m'appéler jeannette
+    - Tu peut m'appéler amédée (M)
+    - Je suis Abdelmalek
+    - tu dois m'appéler matthieu
+- intent: bot_possibility
+  examples: |
+    - j'aime saisir De quoi tu es cencé m'aider ?
+    - Connaitre comment tu es cencé m'aider
+    - saisir À quoi bon tu a été établir ?
+    - S'il vous plaît qu'est ce que tu peut m'apporte de plus dans ma vie ?
+    - s'il vous plaît Tu m'aide a etre quoi de plus dans ma vie
+    - s'il vous plaît tu peut m'aider a faire quoi ?
+    - s'il vous plaît Qu'est ce que tu es apporter de plus dans ma vie
+    - J'aime connaitre Qu'est ce que tu est cencé m'apporter ?
+    - savoir Pour quel motif ils t-on préparer
+    - dans quel but on ta préparer ?
+    - Par quelle manière tu es cencé m'aider ?
+    - Connaitre à quel fin on ta créer
+    - par quelle façon tu m'aide
+    - Tu es cencé es important en quoi ?
+    - Trouver Dans quel but ils t-on fonder
+    - s'il vous plaît Tu es sensé es important en quoi
+    - saisir Comment peut-tu m'aider
+    - Tu es sensé formidable en quoi
+    - s'il vous plaît Tu m'aide a faire quoi de plus dans ma vie
+    - s'il vous plaît à quel motif on ta préparer ?
+    - comprendre qu'est ce que tu es cencé apporter de plus dans ma vie
+    - Tu m'aide a etre quoi dans ma vie ?
+    - saisir quelles sont tes possibilités
+    - s'il vous plaît Pour quel motif je devrais utiliser
+    - S'il te plaît Puis-je saisir de quoi tu es sensé m'aider ?
+    - S'il vous plaît quels sont tes portées ?
+    - s'il vous plaît qu'es tu cencé m'apporter de plus dans ma vie ?
+    - Saisir en quoi tu génialissime ?
+    - Est ce que je peux saisir De quoi est tu cencé m'aider ?
+    - S'il vous plaît Je peux Trouver Qu'est ce que tu es apporter dans ma vie ?
+    - Connaitre en quoi tu es important
+    - s'il te plaît puis-je Savoir de quoi tu es sensé m'aider
+    - Saisir Qu'apporte tu dans ma vie
+    - Dans quel but on ta créer ?
+    - connaitre qu'est ce que tu est sensé m'apporter ?
+    - saisir Comment tu es cencé m'aider ?
+    - Savoir Quelles sont tes capacités ?
+    - Par quelle méthode tu es cencé m'aider ?
+    - nous voulons Trouver quel est ton potentiel
+    - S'il te plaît Je voudrais savoir Par quelle manière m'aide tu
+    - je peux Connaitre quels sont tes habiletés ?
+    - s'il te plaît Je peux saisir Pour quel motif je devrais utiliser ?
+    - Quelles sont tes portées
+    - Comprendre qu'es tu sensé m'apporter de plus dans ma vie
+    - s'il vous plaît Quel est ton potentiel
+    - saisir par quelle méthode peut-tu m'aider ?
+    - peut-on Savoir Par quelle façon pourrai-tu m'aider
+    - qu'es tu cencé m'apporter dans ma vie ?
+    - Connaitre De quoi tu es sensé m'aider
+    - Savoir Tu a été élaborer pourquoi ? ?
+    - Connaitre Qu'est ce que tu m'apporte de plus dans ma vie
+    - s'il te plaît j'aime Trouver comment tu m'aide ?
+    - Tu m'aide a faire quoi dans ma vie ?
+    - trouver Qu'est ce que tu est sensé m'apporter
+    - s'il vous plaît Tu es cencé génial en quoi
+    - En quoi tu génial
+    - Comprendre qu'es tu cencé m'apporter dans ma vie ?
+    - connaitre comment peut-tu m'aider
+    - savoir qu'est ce que tu es sensé apporter dans ma vie
+    - S'il vous plaît J'aspire à Savoir Qu'est ce que tu peut m'apporte de plus dans ma vie
+    - en quoi tu admirable
+    - Dans quelle intention on ta former
+    - Connaitre qu'est ce que tu est sensé m'apporter
+    - Tu es sensé admirable en quoi ?
+    - s'il vous plaît Ils t-on élaborer dans quel but ? ?
+    - saisir qu'est ce que tu es cencé apporter dans ma vie ?
+    - est tu sensé m'aider en quoi ?
+    - s'il vous plaît quelle est ta capacité
+    - dans quel but ils t-on préparer
+    - que peut-tu m'apporter de plus dans ma vie
+    - Quels sont tes possibilités ?
+    - Tu es cencé excellent en quoi ?
+    - s'il vous plaît je voudrais connaitre par quelle technique pourrai-tu m'aider
+    - j'implore de savoir quelle est ta capacité ?
+    - S'il te plaît J'aimerais Comprendre comment pourrai-tu m'aider
+    - S'il vous plaît En quoi tu m'aide ?
+    - s'il te plaît puis-je savoir Qu'est ce que tu peut m'apporte dans ma vie
+    - s'il vous plaît qu'est ce que tu es sensé apporter dans ma vie ?
+    - est ce que je peux Comprendre de quoi est tu cencé m'aider ?
+    - Qu'es tu cencé m'apporter de plus dans ma vie ?
+    - s'il vous plaît qu'es tu sensé m'apporter de plus dans ma vie
+    - comprendre en quoi tu es important
+    - savoir ils t-on construit pour quel fin
+    - Quels sont tes portées
+    - S'il vous plaît Tu délicieux en quoi ?
+    - s'il vous plaît Je voudrais saisir De quoi tu es cencé m'aider ?
+    - qu'apporte tu de plus dans ma vie
+    - S'il vous plaît Tu es important en quoi ?
+    - saisir qu'est ce que tu peut m'apporte dans ma vie ?
+    - j'ai envie de comprendre On ta construit pour quel motif ?
+    - s'il vous plaît dans quel but ils t-on fait ?
+    - s'il vous plaît Par quelle technique tu m'aide ?
+    - À quel motif tu a été former ?
+    - Puis-je Saisir Qu'es tu cencé m'apporter dans ma vie
+    - trouver par quelle méthode pourrai-tu m'aider ?
+    - tu m'aide a etre quoi de plus dans ma vie
+    - Tu es cencé m'aide en quoi
+    - Quels sont tes facultés ?
+    - Saisir dans quelle intention je devrais utiliser
+    - quelle est ton savoir ?
+    - S'il vous plaît qu'est ce que tu m'apporte de plus dans ma vie
+    - S'il vous plaît J'exige de comprendre que peut-tu m'apporter dans ma vie ?
+    - à quel fin ils t-on bâti ?
+    - Tu m'aide a etre quoi de plus dans ma vie ?
+    - qu'apporte tu dans ma vie
+    - s'il te plaît j'implore de Trouver En quoi tu singulier
+    - S'il vous plaît je voudrais Savoir Qu'apporte tu de plus dans ma vie ?
+    - S'il vous plaît J'implore de trouver qu'est ce que tu est sensé m'apporter ?
+    - s'il te plaît nous voulons Saisir Comment tu m'aide ?
+    - saisir Qu'est ce que tu est cencé m'apporter ?
+    - s'il te plaît J'aimerais connaitre De quoi tu es sensé m'aider
+    - s'il vous plaît Je peux saisir Comment pourrai-tu m'aider
+    - s'il vous plaît Tu es sensé admirable en quoi ?
+    - s'il vous plaît que peut-tu m'apporter dans ma vie
+    - je voudrais Connaitre Qu'est ce que tu m'apporte dans ma vie ?
+    - j'ai besion de connaitre On ta former à quoi bon ?
+    - comment tu es cencé m'aider
+    - qu'est ce que tu es sensé apporter dans ma vie ?
+    - Pourrais-je trouver Par quelle façon peut-tu m'aider
+    - s'il vous plaît Qu'est ce que tu est cencé m'apporter ?
+    - S'il vous plaît par quelle méthode tu es sensé m'aider
+    - comprendre que peut-tu m'apporter dans ma vie ?
+    - S'il te plaît j'ai besion de trouver qu'est ce que tu est cencé m'apporter
+    - Saisir Comment tu es sensé m'aider
+    - Saisir à quoi bon je devrais utiliser ?
+    - Tu es cencé m'aide en quoi ?
+    - comment tu m'aide
+    - en quoi tu impeccable
+    - trouver pourquoi ils t-on imaginer ?
+    - Savoir Par quelle procédé tu es sensé m'aider
+    - En quoi tu impeccable
+    - S'il vous plaît Tu es sensé es important en quoi ?
+    - S'il vous plaît de quoi est tu sensé m'aider ?
+    - S'il vous plaît Qu'est ce que tu m'apporte dans ma vie ?
+    - qu'est ce que tu est cencé m'apporter
+    - savoir Par quelle travail peut-tu m'aider
+    - S'il vous plaît Nous voulons trouver quelles sont tes forces
+    - s'il vous plaît pourrais-je Savoir de quoi tu es cencé m'aider ?
+    - s'il vous plaît tu es cencé admirable en quoi ?
+    - Connaitre Quel est ta valeur
+    - s'il te plaît est ce que je peux savoir quel est ton savoir ?
+    - s'il vous plaît Tu es sensé es important en quoi ?
+    - s'il vous plaît J'aspire à comprendre qu'est ce que tu est sensé m'apporter ?
+    - Saisir Qu'est ce que tu peut m'apporte dans ma vie
+    - S'il vous plaît qu'est ce que tu est cencé m'apporter ?
+    - S'il vous plaît En quoi tu es important
+    - comprendre Comment peut-tu m'aider ?
+    - connaitre Comment tu m'aide
+    - j'implore de saisir Qu'es tu cencé m'apporter dans ma vie ?
+    - Qu'est ce que tu es cencé apporter de plus dans ma vie
+    - s'il vous plaît Tu es cencé parfait en quoi
+    - tu es cencé remarquable en quoi ?
+    - s'il vous plaît tu es cencé es important en quoi
+    - Savoir Comment tu m'aide ?
+    - s'il te plaît je cherche à connaitre de quoi est tu cencé m'aider ?
+    - ils t-on imaginer dans quelle intention ? ?
+    - s'il vous plaît Je désire comprendre qu'apporte tu dans ma vie
+    - s'il vous plaît tu es important a faire quoi
+    - Saisir comment pourrai-tu m'aider ?
+    - savoir en quoi tu es important
+    - S'il vous plaît nous voulons connaitre Que peut-tu m'apporter de plus dans ma vie
+    - s'il vous plaît dans quel but je devrais utiliser
+    - s'il vous plaît à quoi bon ils t-on fonder ?
+    - s'il vous plaît Quelles sont tes portées
+    - s'il vous plaît pour quel fin ils t-on implémenter
+    - S'il te plaît Je voudrais Comprendre Qu'apporte tu dans ma vie
+    - S'il te plaît J'implore de savoir Qu'apporte tu de plus dans ma vie ?
+    - S'il vous plaît par quelle travail m'aidera tu
+    - s'il vous plaît peut-on saisir De quoi tu es cencé m'aider ?
+    - s'il te plaît nous voulons connaitre en quoi tu es important ?
+    - s'il vous plaît par quelle méthode tu m'aide ?
+    - S'il te plaît pourrais-je Savoir quel est ton potentiel
+    - s'il vous plaît comment tu m'aide
+    - s'il te plaît puis-je Connaitre qu'es tu sensé m'apporter de plus dans ma vie
+    - j'ai besion de Trouver à quoi bon je devrais utiliser
+    - S'il vous plaît Par quelle méthode peut-tu m'aider ?
+    - Connaitre Qu'est ce que tu m'apporte dans ma vie ?
+    - Qu'apporte tu dans ma vie ?
+    - s'il vous plaît Tu m'aide a faire quoi de plus dans ma vie ?
+    - S'il vous plaît je voudrais Savoir Qu'est ce que tu m'apporte dans ma vie
+    - S'il te plaît Puis-je trouver dans quel but je dois utiliser ?
+    - S'il vous plaît Peut-on Savoir par quelle manière pourrai-tu m'aider ?
+    - s'il vous plaît j'aspire à comprendre pour quel motif je devrais utiliser ?
+    - S'il te plaît J'exige de comprendre De quoi est tu sensé m'aider
+    - Qu'est ce que tu es apporter de plus dans ma vie ?
+    - S'il vous plaît je peux Saisir Qu'est ce que tu es apporter de plus dans ma vie
+    - Qu'es tu sensé m'apporter dans ma vie ?
+    - s'il vous plaît Qu'es tu cencé m'apporter de plus dans ma vie
+    - quelles sont tes habiletés ?
+    - S'il vous plaît à quoi bon je devrais utiliser ?
+    - saisir À quel motif ils t-on établir
+    - connaitre qu'es tu cencé m'apporter de plus dans ma vie
+    - Connaitre comment m'aidera tu ?
+    - S'il vous plaît je brûle de Connaitre par quelle technique tu es cencé m'aider ?
+    - j'ai envie de trouver par quelle méthode tu es cencé m'aider ?
+    - de quoi tu es cencé m'aider
+    - S'il vous plaît Tu es important a faire quoi ?
+    - comprendre qu'est ce que tu est cencé m'apporter ?
+    - S'il te plaît est ce que je peux Trouver Par quelle procédé pourrai-tu m'aider
+    - Comprendre À quel fin ils t-on réaliser ?
+    - savoir Par quelle méthode tu es sensé m'aider
+    - s'il vous plaît J'ai besion de savoir à quoi bon je dois utiliser ?
+    - S'il vous plaît je voudrais Savoir qu'est ce que tu m'apporte dans ma vie
+    - Connaitre dans quelle intention je devrais utiliser
+    - pour quel motif je dois utiliser
+    - Tu incomparable en quoi ?
+    - s'il vous plaît Comment m'aide tu ?
+    - je brûle de Connaitre par quelle moyen tu m'aide
+    - S'il vous plaît par quelle moyen m'aide tu ?
+    - tu génial a faire quoi ?
+    - s'il te plaît J'ai envie de Savoir Quelle est ton pouvoir
+    - De quoi tu es cencé m'aider ?
+    - S'il vous plaît Tu es cencé épatant en quoi ?
+    - s'il vous plaît comment tu es cencé m'aider
+    - S'il te plaît j'ai besion de savoir comment tu es sensé m'aider ?
+    - savoir Qu'est ce que tu m'apporte dans ma vie ?
+    - Peut-on Comprendre Quels sont tes moyen ?
+    - en quoi tu génialissime ?
+    - s'il vous plaît Qu'est ce que tu peut m'apporte dans ma vie
+    - s'il te plaît peut-on Saisir Qu'est ce que tu est sensé m'apporter ?
+    - s'il vous plaît Quelles sont tes aptitudes ?
+    - Par quelle manière peut-tu m'aider ?
+    - S'il vous plaît On ta bâti dans quelle intention ?
+    - Trouver qu'est ce que tu peut m'apporte dans ma vie ?
+    - s'il vous plaît Tu peut m'aider a faire quoi ?
+    - s'il vous plaît Qu'est ce que tu es sensé apporter dans ma vie
+    - tu peut m'aider a faire quoi ?
+    - comprendre Comment tu es sensé m'aider
+    - Est tu cencé m'aider en quoi
+    - quels sont tes possibilités ?
+    - j'aimerais saisir Comment m'aidera tu ?
+    - s'il vous plaît Tu m'aide a etre quoi dans ma vie
+    - S'il vous plaît comment tu es sensé m'aider
+    - tu es cencé super en quoi ?
+    - connaitre qu'est ce que tu peut m'apporte dans ma vie
+    - connaitre Par quelle procédé m'aidera tu ?
+    - s'il vous plaît puis-je trouver qu'apporte tu dans ma vie
+    - en quoi tu génialissime
+    - Peut-on trouver Qu'es tu sensé m'apporter de plus dans ma vie
+    - Nous voulons Saisir dans quelle intention ils t-on ériger
+    - S'il vous plaît tu m'aide a faire quoi dans ma vie ?
+    - j'exige de saisir Par quelle travail m'aidera tu
+    - Quelles sont tes métier
+    - s'il vous plaît Qu'es tu sensé m'apporter de plus dans ma vie
+    - s'il vous plaît tu es sensé m'aide en quoi
+    - saisir quels sont tes aptitudes
+    - Dans quelle intention je dois utiliser ?
+    - J'aime saisir que peut-tu m'apporter dans ma vie ?
+    - s'il vous plaît À quoi bon tu a été élaborer
+    - s'il vous plaît J'aime trouver qu'apporte tu dans ma vie
+    - on ta réaliser à quoi bon ? ?
+    - je peux saisir On ta implémenter à quoi bon ? ?
+    - J'aspire à saisir qu'est ce que tu m'apporte dans ma vie
+    - trouver Pourquoi je dois utiliser
+    - Comprendre Comment tu es sensé m'aider
+    - s'il vous plaît Tu m'aide a etre quoi de plus dans ma vie ?
+    - s'il te plaît peut-on Connaitre en quoi tu es important ?
+    - à quoi bon je dois utiliser ?
+    - savoir De quoi tu es sensé m'aider ?
+    - Qu'est ce que tu peut m'apporte dans ma vie
+    - trouver de quoi est tu sensé m'aider ?
+    - s'il te plaît j'implore de Savoir Que peut-tu m'apporter de plus dans ma vie
+    - s'il te plaît J'exige de Trouver Ils t-on former dans quelle intention
+    - Trouver À quel fin je dois utiliser
+    - s'il te plaît J'aspire à Savoir À quoi bon on ta fabriquer ?
+    - Je souhaite Savoir quels sont tes portées
+    - S'il vous plaît que peut-tu m'apporter dans ma vie ?
+    - Connaitre quels sont tes fonctionnalités ?
+    - Tu es cencé remarquable en quoi
+    - Peut-on trouver de quoi est tu cencé m'aider ?
+    - Trouver de quoi est tu cencé m'aider
+    - S'il vous plaît qu'est ce que tu es sensé apporter dans ma vie ?
+    - Comprendre comment peut-tu m'aider ?
+    - en quoi tu es important
+    - j'ai besion de comprendre Comment m'aide tu
+    - ils t-on assembler pour quel fin ?
+    - s'il te plaît j'aimerais Connaitre qu'apporte tu dans ma vie
+    - S'il vous plaît Par quelle technique tu es sensé m'aider
+    - S'il te plaît J'implore de Comprendre À quel fin je dois utiliser
+    - S'il vous plaît Tu es cencé incomparable en quoi
+    - S'il vous plaît Je cherche à Saisir Ils t-on construit pourquoi ?
+    - trouver De quoi tu es cencé m'aider
+    - par quelle moyen pourrai-tu m'aider ?
+    - s'il vous plaît qu'est ce que tu est cencé m'apporter
+    - connaitre qu'est ce que tu peut m'apporte de plus dans ma vie ?
+    - J'ai envie de comprendre Qu'est ce que tu peut m'apporte dans ma vie
+    - Est ce que je peux Saisir En quoi tu m'aide
+    - s'il vous plaît nous voulons Savoir Qu'es tu sensé m'apporter de plus dans ma vie ?
+    - Trouver tu a été inventer pourquoi ?
+    - S'il vous plaît Qu'est ce que tu est cencé m'apporter
+    - tu es cencé sans pareil en quoi ?
+    - s'il te plaît peut-on comprendre Qu'est ce que tu es apporter dans ma vie ?
+    - Tu a été créer dans quelle intention ?
+    - Connaitre Par quelle façon pourrai-tu m'aider ?
+    - savoir Tu a été ériger à quoi bon
+    - nous voulons connaitre qu'apporte tu dans ma vie
+    - par quelle technique peut-tu m'aider
+    - Comprendre Qu'est ce que tu m'apporte dans ma vie
+    - par quelle manière tu es sensé m'aider
+    - Tu es sensé es important en quoi
+    - J'exige de saisir par quelle moyen tu es sensé m'aider
+    - Par quelle façon tu m'aide
+    - s'il vous plaît tu es cencé m'aide en quoi
+    - S'il vous plaît On ta implémenter à quel motif
+    - Trouver qu'es tu cencé m'apporter dans ma vie
+    - s'il vous plaît Peut-on Savoir quelle est ton potentiel
+    - j'aimerais Comprendre Dans quel but je devrais utiliser
+    - j'aime Comprendre Dans quelle intention on ta former ?
+    - S'il vous plaît qu'est ce que tu es apporter de plus dans ma vie ?
+    - S'il vous plaît on ta inventer dans quelle intention
+    - s'il vous plaît tu m'aide a faire quoi de plus dans ma vie
+    - Savoir par quelle façon m'aidera tu ?
+    - S'il vous plaît par quelle travail peut-tu m'aider ?
+    - S'il te plaît pourrais-je connaitre comment tu m'aide
+    - s'il te plaît Est ce que je peux saisir on ta forger à quel fin ?
+    - Quel est ton savoir ?
+    - Est ce que je peux Connaitre qu'est ce que tu est cencé m'apporter
+    - S'il vous plaît Tu es sensé m'aide en quoi
+    - savoir par quelle manière tu m'aide
+    - s'il vous plaît tu es cencé merveilleux en quoi ?
+    - s'il vous plaît Est tu sensé m'aider en quoi
+    - Qu'est ce que tu m'apporte de plus dans ma vie
+    - J'aimerais connaitre Tu a été créer dans quel but ?
+    - Connaitre Comment peut-tu m'aider
+    - Comprendre Quelle est ton potentiel ?
+    - s'il te plaît j'ai envie de trouver Qu'est ce que tu m'apporte dans ma vie ?
+    - Savoir Qu'est ce que tu peut m'apporte de plus dans ma vie
+    - Dans quelle intention je devrais utiliser
+    - Tu m'aide en quoi ?
+    - Saisir Par quelle procédé peut-tu m'aider
+    - Saisir Comment peut-tu m'aider ?
+    - s'il te plaît Puis-je Savoir Quel est ton potentiel
+    - s'il vous plaît pourrais-je comprendre Comment peut-tu m'aider
+    - Quelle est ta capacité ?
+    - peut-on Savoir tu a été imaginer à quoi bon ? ?
+    - s'il vous plaît en quoi tu m'aide ?
+    - S'il vous plaît Tu es cencé m'aide en quoi
+    - Qu'est ce que tu peut faire
+    - s'il vous plaît que peut-tu m'apporter dans ma vie ?
+    - Connaitre Quels sont tes moyen
+    - S'il vous plaît tu parfait a faire quoi ?
+    - s'il vous plaît Peut-on Saisir Quels sont tes compétences
+    - s'il vous plaît Tu m'aide a faire quoi dans ma vie
+    - tu m'aide a faire quoi de plus dans ma vie
+    - s'il te plaît j'implore de savoir en quoi tu incomparable ?
+    - Tu es important en quoi ?
+    - S'il vous plaît Qu'apporte tu de plus dans ma vie
+    - connaitre Qu'est ce que tu es sensé apporter dans ma vie ?
+    - s'il vous plaît qu'est ce que tu est sensé m'apporter
+    - S'il vous plaît À quoi bon ils t-on forger ?
+    - S'il vous plaît tu a été imaginer pourquoi ?
+    - S'il te plaît je souhaite Savoir qu'apporte tu dans ma vie
+    - Qu'est ce que tu peut m'apporte dans ma vie ?
+    - s'il te plaît Peut-on comprendre Qu'est ce que tu es apporter de plus dans ma vie
+    - s'il vous plaît quelles sont tes métier ?
+    - j'ai envie de trouver qu'est ce que tu m'apporte dans ma vie ?
+    - Qu'est ce que tu est sensé m'apporter ?
+    - tu m'aide a faire quoi dans ma vie ?
+    - S'il vous plaît est tu cencé m'aider en quoi ?
+    - comprendre Qu'est ce que tu peut m'apporte dans ma vie ?
+    - Comprendre de quoi est tu cencé m'aider
+    - trouver Qu'est ce que tu es cencé apporter dans ma vie ?
+    - Savoir comment tu es cencé m'aider
+    - Comprendre De quoi est tu cencé m'aider
+    - s'il te plaît Nous voulons Trouver Qu'es tu sensé m'apporter de plus dans ma vie
+    - Nous voulons Savoir pour quel motif je dois utiliser
+    - S'il vous plaît Par quelle travail peut-tu m'aider
+    - S'il te plaît J'ai envie de saisir pour quel fin je dois utiliser
+    - s'il te plaît je voudrais Comprendre pourquoi je dois utiliser
+    - s'il vous plaît Comment tu m'aide
+    - connaitre Que peut-tu m'apporter de plus dans ma vie ?
+    - s'il te plaît J'aime Saisir quelles sont tes forces
+    - s'il vous plaît que peut-tu m'apporter de plus dans ma vie
+    - S'il vous plaît qu'est ce que tu m'apporte dans ma vie
+    - s'il vous plaît qu'est ce que tu peut m'apporte de plus dans ma vie
+    - S'il vous plaît qu'est ce que tu est sensé m'apporter
+    - s'il vous plaît Qu'est ce que tu es apporter dans ma vie ?
+    - Comprendre comment tu m'aide ?
+    - En quoi tu formidable ?
+    - Tu m'aide a etre quoi de plus dans ma vie
+    - connaitre comment tu m'aide ?
+    - Comment m'aidera tu ?
+    - saisir Par quelle technique m'aide tu ?
+    - pourrais-je Saisir par quelle procédé pourrai-tu m'aider
+    - Savoir tu a été construit dans quel but ?
+    - Connaitre qu'est ce que tu es apporter de plus dans ma vie
+    - Trouver Qu'apporte tu de plus dans ma vie
+    - s'il vous plaît Pourrais-je connaitre De quoi tu es cencé m'aider ?
+    - tu es cencé es important en quoi
+    - S'il te plaît nous voulons trouver en quoi tu es important ?
+    - on ta produire dans quelle intention ?
+    - Comprendre Par quelle travail peut-tu m'aider
+    - J'ai besion de Trouver par quelle manière tu m'aide ?
+    - S'il te plaît j'ai envie de Connaitre de quoi tu es sensé m'aider ?
+    - s'il vous plaît tu es cencé m'aide en quoi ?
+    - j'aspire à Saisir Que peut-tu m'apporter de plus dans ma vie ?
+    - j'aspire à Savoir Par quelle méthode tu es sensé m'aider
+    - savoir quelles sont tes moyen ?
+    - S'il vous plaît en quoi tu es important ?
+    - Savoir De quoi tu es cencé m'aider
+    - Connaitre Par quelle travail m'aidera tu
+    - Saisir Quel est ton savoir
